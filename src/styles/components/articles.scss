@@ -2,10 +2,14 @@
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
-
+  flex-direction: column;
+  .impair {
+    margin-bottom: 27px;
+    margin-top: 27px;
+  }
   article {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 
     .colonne1 {
       display: flex;
@@ -28,9 +32,31 @@
       flex-direction: column;
       align-items: flex-end;
       justify-content: center;
+      padding-top: 20px;
       #UFO {
         position: relative;
-        bottom: 80px;
+        bottom: 100px;
+        border-radius: 20px;
+      }
+      #Boxeur {
+        position: relative;
+        bottom: 100px;
+        right: 120px;
+        width: 85%;
+
+        border-radius: 20px;
+      }
+      #Invasion {
+        position: relative;
+        bottom: 115px;
+        width: 1140px;
+        border-radius: 20px;
+      }
+      #Media {
+        position: relative;
+        bottom: 115px;
+        width: 1140px;
+        border-radius: 20px;
       }
     }
   }
@@ -42,12 +68,20 @@
   }
   .svg-wrapper {
     position: relative;
-    top: 24%;
-    right: 30.5%;
+    top: 10%;
+    right: 35.5%;
     transform: translateY(-100%);
     text-align: center;
     margin: 0 auto;
+    height: 70px;
+    a {
+      color: var(--color-secondary);
+      &:hover {
+        color: var(--color-text-secondary);
+      }
+    }
   }
+
   .shape1,
   .shape2 {
     stroke-dasharray: 1120;
@@ -85,13 +119,24 @@
     }
   }
 
-  #Titre {
+  .Titre {
     font: 8em var(--font-primary);
     position: relative;
     right: 125px;
-    bottom: 122px;
+    bottom: 140px;
   }
-
+  .Boxe {
+    font: 8em var(--font-primary);
+    position: relative;
+    right: 170px;
+    bottom: 140px;
+  }
+  .mechant {
+    font: 8em var(--font-primary);
+    position: relative;
+    right: 215px;
+    bottom: 145px;
+  }
   .text-copy {
     fill: none;
     stroke-dasharray: 6% 29%;
@@ -138,5 +183,30 @@
     100% {
       stroke-dashoffset: -35%;
     }
+  }
+  .pale {
+    background-color: var(--color-primary-lighter);
+    padding-bottom: 28px;
+    padding-top: 28px;
+  }
+  #Unity {
+    width: 50%;
+    margin-right: 10px;
+  }
+  #blenderDark {
+    width: 90%;
+    margin-right: 5px;
+  }
+  #UnityDark {
+    width: 50%;
+    margin-right: 15px;
+  }
+  #CsharpDark {
+    width: 50%;
+  }
+  #HTML {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }

@@ -95,6 +95,13 @@
     transform: translateY(10%);
     margin: 0 auto;
     width: 500px;
+    height: 80px;
+    a {
+      color: var(--color-secondary);
+      &:hover {
+        color: var(--color-text-secondary);
+      }
+    }
   }
   .shape1,
   .shape2 {
@@ -127,6 +134,7 @@
     text-decoration-color: var(--color-text-titre);
   }
   .triangles {
+    margin-top: 90px;
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
