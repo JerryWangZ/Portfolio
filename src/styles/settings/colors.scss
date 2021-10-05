@@ -3,15 +3,16 @@
    ========================================================================== */
 
 :root {
-    // Couleur de base
-    --color-white: #fff;
-    --color-black: #000;
+  // Couleur de base
+  --color-white: #fff;
+  --color-black: #000;
 
-    // Couleurs du projet
-    --color-primary: #ff00ff;
-    --color-primary-darker: #380138;
-    --color-secondary: #ff9;
+  // Couleurs du projet
+  --color-primary: #184e77;
+  --color-primary-lighter: #1e6091;
+  --color-secondary: #d9ed92;
+  --color-text-secondary: #99d98c;
+  --color-text: #168aad;
 
-    --color-bg-primary: var(--color-white);
-    --color-bg-secondary: #ff0000;
+  --color-text-titre: #76c893;
 }

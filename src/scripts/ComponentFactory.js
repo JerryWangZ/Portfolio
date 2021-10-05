@@ -1,24 +1,26 @@
-import Carousel from './components/Carousel';
-import Header from './components/Header';
-import Modal from './components/Modal';
-import Scrolly from './components/Scrolly';
-import menuHamburger from './components/menuHamburger';
+import Carousel from "./components/Carousel";
+// import Header from "./components/Header";
+import Modal from "./components/Modal";
+import Scrolly from "./components/Scrolly";
+// import menuHamburger from "./components/menuHamburger";
+import Animation from "./components/animation";
 
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
       Carousel,
-      Header,
+      // Header,
       Modal,
       Scrolly,
-      menuHamburger,
+      // menuHamburger,
+      Animation,
     };
     this.init();
   }
 
   init() {
-    const components = document.querySelectorAll('[data-component]');
+    const components = document.querySelectorAll("[data-component]");
 
     for (let i = 0; i < components.length; i++) {
       const element = components[i];

@@ -1,0 +1,116 @@
+.hero {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 800px;
+  h1 {
+    margin: 0;
+  }
+
+  $height: 50px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+
+  .text-container {
+    width: 520px;
+    font-size: 40px;
+    height: $height;
+    margin-right: 300px;
+  }
+
+  .dynamic-text,
+  .static-text {
+    display: inline-block;
+  }
+
+  .static-text {
+    color: var(--color-text);
+    margin-right: 20px;
+  }
+
+  .dynamic-text {
+    list-style: none;
+    position: absolute;
+    overflow: hidden;
+    height: $height;
+    padding-left: 0;
+  }
+
+  .item {
+    position: relative;
+    top: 0;
+    animation: move 6.5s infinite 1s;
+    &:first-child {
+      color: var(--color-text-titre);
+    }
+    &:nth-child(2) {
+      color: var(--color-secondary);
+    }
+    &:nth-child(3) {
+      color: var(--color-text-secondary);
+    }
+    text-align: left;
+  }
+
+  @keyframes move {
+    0% {
+      top: 0px;
+    }
+    35% {
+      top: -70px;
+    }
+    70% {
+      top: -130px;
+    }
+  }
+
+  // ------------------------
+  ::selection {
+    background: var(--color-primary);
+  }
+  .svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(10%);
+    margin: 0 auto;
+    width: 500px;
+  }
+  .shape1,
+  .shape2 {
+    stroke-dasharray: 1120;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke: var(--color-secondary);
+    border-bottom: 5px solid black;
+    transition-timing-function: linear;
+    transition: stroke-dashoffset 4s, stroke-dasharray 4s;
+  }
+  .shape1 {
+    stroke-dashoffset: 1120;
+  }
+  .shape2 {
+    stroke-dashoffset: -1120;
+  }
+  .text {
+    letter-spacing: 5px;
+    color: var(--color-text-titre);
+    top: -88px;
+    position: relative;
+  }
+  .svg-wrapper:hover .shape1,
+  .svg-wrapper:hover .shape2 {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1120;
+  }
+  a {
+    text-decoration-color: var(--color-text-titre);
+  }
+}

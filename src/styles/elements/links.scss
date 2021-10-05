@@ -4,25 +4,25 @@
    ========================================================================== */
 
 a {
-    &:link {
-        color: var(--color-primary);
-        text-decoration: none;
-    }
+  &:link {
+    color: var(--color-text);
+    text-decoration: none;
+  }
 
-    &:visited {
-        color: var(--color-primary);
-    }
+  &:visited {
+    color: var(--color-text);
+  }
 
-    &:hover {
-        color: var(--color-primary-darker);
-        text-decoration: underline;
-    }
+  &:hover {
+    color: var(--color-primary-darker);
+    text-decoration: underline;
+  }
 
-    &:active {
-        color: var(--color-primary-darker);
-    }
+  &:active {
+    color: var(--color-primary-darker);
+  }
 
-    &:focus {
-        color: var(--color-primary-darker);
-    }
+  &:focus {
+    color: var(--color-primary-darker);
+  }
 }

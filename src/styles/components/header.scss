@@ -1,0 +1,30 @@
+.header {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary-lighter);
+
+    img {
+      max-width: 100px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      text-align: center;
+
+      li {
+        list-style: none;
+        margin-right: 50px;
+        margin-left: 50px;
+
+        a {
+          color: var(--color-text);
+        }
+      }
+    }
+  }
+}
