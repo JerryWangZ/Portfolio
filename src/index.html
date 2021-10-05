@@ -73,30 +73,70 @@
       </section>
       <section class="articles">
         <article>
-          <h6>01.</h6>
-          <h2 class="tache">3D | Animation | Vidéo</h2>
-          <p>
-            Une personne perdu dans l’espace qui essaye de retrouver la planète
-            terre. Ce projet a été réalisé en cours de
-            <span>Réalisation Vidéo</span>. Ce projet utilise les applications
-            <span>Blender, Premiere pro</span>.
-          </p>
-          <img src="assets/images/premiere.png" alt="Premiere pro" />
-          <img src="assets/images/blender.png" alt="Blender" />
-          <p>
-            Réalisé par : <br />
-            <span>
-              Jerry Wang <br />
-              Anthony Janes-Villiard
-            </span>
-          </p>
-          <button>Voir Plus</button>
+          <div class="colonne1">
+            <h6>01.</h6>
+            <h2 class="tache">3D | Animation | Vidéo</h2>
+            <p>
+              Une personne perdu dans l’espace qui essaye de retrouver la
+              planète<br />
+              terre. Ce projet a été réalisé en cours de
+              <span>Réalisation Vidéo</span>. <br /><br />
+              Ce projet utilise les applications
+              <span>Blender, Premiere pro</span>.
+            </p>
+            <div class="imagesFlex">
+              <img
+                class="programmes"
+                id="blender"
+                src="assets/images/blender.png"
+                alt="Blender"
+              />
+              <img
+                class="programmes"
+                id="premiere"
+                src="assets/images/premiere.png"
+                alt="Premiere pro"
+              />
+            </div>
+
+            <p>
+              Réalisé par : <br />
+              <span>
+                Jerry Wang <br />
+                Anthony Janes-Villiard
+              </span>
+            </p>
+            <div class="svg-wrapper">
+              <a href="#">
+                <svg height="60" width="200" xmlns="http://www.w3.org/2000/svg">
+                  <rect class="shape1" height="60" width="200" />
+                  <rect class="shape2" height="60" width="500" />
+                  <h4 class="text">Voir plus</h4>
+                </svg>
+              </a>
+            </div>
+          </div>
+
           <div class="colonne2">
-            <h2>Le seul survivant</h2>
-            <h2 class="rale">Le seul survivant</h2>
-            <img src="assets/images/ufo.png" alt="UFO" />
+            <svg id="Titre" viewBox="0 0 960 300">
+              <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">Le Survivant</text>
+              </symbol>
+
+              <g class="g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+              </g>
+            </svg>
+            <img id="UFO" src="assets/images/ufo.png" alt="UFO" />
           </div>
         </article>
+
         <!-- 
         <article class="pale">
           <h6>02.</h6>

@@ -127,7 +127,7 @@
     text-decoration-color: var(--color-text-titre);
   }
   .triangles {
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,5 +135,8 @@
       width: 8%;
       height: 8%;
     }
+  }
+  h4 {
+    text-decoration: underline;
   }
 }

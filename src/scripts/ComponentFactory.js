@@ -5,7 +5,7 @@ import Scrolly from "./components/Scrolly";
 // import menuHamburger from "./components/menuHamburger";
 import Animation from "./components/animation";
 import Cursor from "./components/cursor";
-
+import Text from "./components/textInfini";
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
@@ -17,6 +17,7 @@ export default class ComponentFactory {
       // menuHamburger,
       Animation,
       Cursor,
+      Text,
     };
     this.init();
   }

@@ -14,15 +14,15 @@ a {
   }
 
   &:hover {
-    color: var(--color-primary-darker);
+    color: var(--color-primary-lighter);
     text-decoration: underline;
   }
 
   &:active {
-    color: var(--color-primary-darker);
+    color: var(--color-primary-lighter);
   }
 
   &:focus {
-    color: var(--color-primary-darker);
+    color: var(--color-primary-lighter);
   }
 }
