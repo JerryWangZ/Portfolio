@@ -1,12 +1,24 @@
 .hero {
-  padding-top: 50px;
+  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 800px;
   h1 {
+    padding-top: 50px;
     margin: 0;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--color-text);
+    background: url(../../assets/images/background.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 40s linear infinite;
+  }
+  @keyframes back {
+    100% {
+      background-position: 2000px 0;
+    }
   }
 
   $height: 50px;
@@ -17,6 +29,7 @@
     justify-content: center;
     align-items: center;
     height: 400px;
+    margin-bottom: 60px;
   }
 
   .text-container {
@@ -112,5 +125,15 @@
   }
   a {
     text-decoration-color: var(--color-text-titre);
+  }
+  .triangles {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 8%;
+      height: 8%;
+    }
   }
 }

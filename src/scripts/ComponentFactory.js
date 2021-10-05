@@ -4,6 +4,7 @@ import Modal from "./components/Modal";
 import Scrolly from "./components/Scrolly";
 // import menuHamburger from "./components/menuHamburger";
 import Animation from "./components/animation";
+import Cursor from "./components/cursor";
 
 export default class ComponentFactory {
   constructor() {
@@ -15,6 +16,7 @@ export default class ComponentFactory {
       Scrolly,
       // menuHamburger,
       Animation,
+      Cursor,
     };
     this.init();
   }

@@ -13,12 +13,16 @@
       rel="stylesheet"
     />
     <link href="http://fonts.cdnfonts.com/css/poetsenone" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
 
     <script src="scripts/main.js" defer></script>
   </head>
 
   <body>
     <div class="site-container" data-component="Scrolly">
+      <!-- <div class="cursor cursor--small"></div>
+      <canvas class="cursor cursor--canvas" resize></canvas> -->
       <header class="header" data-component="Header">
         <div class="wrapper">
           <nav>
@@ -60,12 +64,14 @@
             </a>
           </div>
 
-          <h3>MES PROJETS</h3>
-          <img src="assets/images/triangle.png" alt="Triangle vers le bas" />
-          <img src="assets/images/triangle.png" alt="Triangle vers le bas" />
+          <div class="triangles">
+            <img src="assets/images/triangle.png" alt="Triangle vers le bas" />
+            <h3>MES PROJETS</h3>
+            <img src="assets/images/triangle.png" alt="Triangle vers le bas" />
+          </div>
         </hero>
       </section>
-      <section>
+      <section class="articles">
         <article>
           <h6>01.</h6>
           <h2 class="tache">3D | Animation | Vidéo</h2>
@@ -85,11 +91,13 @@
             </span>
           </p>
           <button>Voir Plus</button>
-          <h2>Le seul survivant</h2>
-          <h2 class="rale">Le seul survivant</h2>
-          <img src="assets/images/ufo.png" alt="UFO" />
+          <div class="colonne2">
+            <h2>Le seul survivant</h2>
+            <h2 class="rale">Le seul survivant</h2>
+            <img src="assets/images/ufo.png" alt="UFO" />
+          </div>
         </article>
-
+        <!-- 
         <article class="pale">
           <h6>02.</h6>
           <h2 class="tache">Programmation</h2>
@@ -181,7 +189,7 @@
           <h2>Queensman</h2>
           <h2 class="rale">Queensman</h2>
           <img src="assets/images/queensman.png" alt="mediaConf" />
-        </article>
+        </article> -->
       </section>
     </div>
   </body>

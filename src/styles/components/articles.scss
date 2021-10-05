@@ -1,0 +1,16 @@
+section {
+  .articles {
+    display: flex;
+    article {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 5%;
+      }
+      .colonne2 {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
