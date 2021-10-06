@@ -1,0 +1,84 @@
+.apropos {
+  .pageUn {
+    display: flex;
+    .Qualite {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      #ouvert {
+        color: var(--color-text);
+        position: relative;
+        right: 150px;
+      }
+      #ingenieux {
+        padding-bottom: 30px;
+      }
+      #ambitieux {
+        color: var(--color-text);
+        margin-left: 40px;
+      }
+      #devoue {
+        margin-bottom: 250px;
+        margin-left: 50px;
+      }
+    }
+    #megaphone {
+      margin-top: 300px;
+      width: 40%;
+    }
+    .titreApropos {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      h2 {
+        margin: 0;
+        margin-left: 80px;
+      }
+      h1 {
+        margin: 0;
+        margin-left: 200px;
+        font-size: 5em;
+      }
+      #Jerry {
+      }
+      #jeSuis {
+        padding-left: 60px;
+      }
+      #Wang {
+        font-size: 4em;
+        padding-left: 15px;
+        position: relative;
+        bottom: 45px;
+      }
+      #salut {
+        margin-top: 80px;
+      }
+      #bulle1 {
+        width: 15%;
+        margin-left: 48px;
+      }
+      #bulle2 {
+        width: 15%;
+        margin-left: 281px;
+        margin-top: 20px;
+      }
+      #bulle3 {
+        width: 15%;
+        margin-left: 159px;
+        margin-top: 50px;
+      }
+      .bullesFlex {
+        display: flex;
+      }
+    }
+  }
+}
+
+.apropos2 {
+  .pagedeux {
+    h3 {
+      text-align: center;
+    }
+  }
+}

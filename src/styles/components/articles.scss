@@ -4,9 +4,7 @@
   flex-direction: column;
   height: 100vh;
 
-
   .impair {
- 
     height: 100vh;
   }
   article {
@@ -18,7 +16,7 @@
       flex-direction: column;
       margin-right: 100px;
       justify-content: center;
-      margin-bottom:60px;
+      margin-bottom: 60px;
 
       #blender {
         width: 50%;
@@ -34,25 +32,40 @@
       width: 20%;
       align-items: center;
     }
+    .colonne2Mechant {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      height: 100vh;
+      position: relative;
+      bottom: 70px;
+      #Invasion {
+        width: 1140px;
+        border-radius: 20px;
+      }
+    }
     .colonne2 {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       justify-content: flex-start;
-      margin-top: 20px;   
+
       #UFO {
         border-radius: 20px;
+        margin-bottom: 50px;
       }
       #Boxeur {
         width: 85%;
 
         border-radius: 20px;
       }
-      #Invasion {
-        width: 1140px;
+
+      #Media {
+        width: 1000px;
         border-radius: 20px;
       }
-      #Media {
+      #Invasion {
         width: 1140px;
         border-radius: 20px;
       }
@@ -64,6 +77,9 @@
   h4 {
     text-decoration: underline;
   }
+  .mechant {
+    width: auto;
+  }
   .svg-wrapper {
     position: relative;
     right: 35.5%;
@@ -71,6 +87,7 @@
     text-align: center;
     margin: 0 auto;
     height: 70px;
+    width: auto;
     a {
       color: var(--color-secondary);
       &:hover {
@@ -121,9 +138,8 @@
   }
   .Boxe {
     font: 8em var(--font-primary);
-    
   }
-  .mediaConf{
+  .mediaConf {
     font: 8em var(--font-primary);
   }
   .mechant {

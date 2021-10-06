@@ -8,6 +8,61 @@
     transform: translateY(0);
   }
 }
+[data-scrolly="ouvert"] {
+  opacity: 0;
+  transition: all 2s ease-out;
+  transform: rotate(10deg);
+
+  transform: scale(0.1);
+  &.is-active {
+    opacity: 1;
+    transform: rotate(-20deg), scale(2);
+    transform: scale(2);
+    transform: rotate(-20deg);
+  }
+}
+[data-scrolly="ingenieux"] {
+  opacity: 0;
+  transition: all 2s ease-out;
+  transform: rotate(20deg);
+
+  transform: scale(0.1);
+  &.is-active {
+    opacity: 1;
+    transform: rotate(-15deg), scale(2);
+    transform: scale(2);
+    transform: rotate(-15deg);
+  }
+}
+[data-scrolly="ambitieux"] {
+  opacity: 0;
+  transition: all 2s ease-out;
+  transform: rotate(50deg);
+
+  transform: scale(0.1);
+  &.is-active {
+    opacity: 1;
+    transform: rotate(5deg), scale(2);
+    transform: scale(2);
+    transform: rotate(5deg);
+  }
+}
+
+[data-scrolly="devoue"] {
+  opacity: 0;
+  transition: all 2s ease-out;
+  transform: rotate(50deg);
+
+  transform: scale(0.1);
+  &.is-active {
+    opacity: 1;
+    transform: rotate(10deg), scale(2);
+    transform: scale(2);
+
+    transform: rotate(10deg);
+  }
+}
+
 [data-scrolly="scaleTout"] {
   opacity: 0;
   transition: transform 1.5s;
@@ -16,6 +71,17 @@
   &.is-active {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+[data-scrolly="scaleToutLent"] {
+  opacity: 0;
+  transition: transform 3s;
+  transform: scale(0.1);
+
+  &.is-active {
+    opacity: 1;
+    transform: scale(1.2);
   }
 }
 
