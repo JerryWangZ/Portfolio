@@ -21,8 +21,8 @@
 
   <body>
     <div class="site-container" data-component="Scrolly">
-      <!-- <div class="cursor cursor--small"></div>
-      <canvas class="cursor cursor--canvas" resize></canvas> -->
+      <div class="cursor cursor--small"></div>
+      <canvas class="cursor cursor--canvas" resize></canvas>
 
       <header class="header" data-component="Header">
         <div class="well" id="well">
@@ -48,10 +48,12 @@
             <section class="hero">
               <hero>
                 <div class="container">
-                  <h1>Jerry Wang</h1>
+                  <h1 data-scrolly="fromBottom">Jerry Wang</h1>
                   <div class="text-container">
-                    <p class="static-text">Je suis un :</p>
-                    <ul class="dynamic-text">
+                    <p class="static-text" data-scrolly="fromBottom">
+                      Je suis un :
+                    </p>
+                    <ul class="dynamic-text" data-scrolly="fromBottom">
                       <li class="item">Front-End développeur</li>
                       <li class="item">Programmeur Unity</li>
                       <li class="item">Vidéo Editor</li>
@@ -59,7 +61,7 @@
                   </div>
                 </div>
 
-                <div class="svg-wrapper">
+                <div class="svg-wrapper" data-scrolly="fromBottom">
                   <svg
                     height="60"
                     width="400"
@@ -73,7 +75,7 @@
                   </svg>
                 </div>
 
-                <div class="triangles">
+                <div class="triangles" data-scrolly="scaleX">
                   <img
                     src="assets/images/triangle.png"
                     alt="Triangle vers le bas"
@@ -91,9 +93,11 @@
             <section class="articles">
               <article class="impair">
                 <div class="colonne1">
-                  <h6>01.</h6>
-                  <h2 class="tache">3D | Animation | Vidéo</h2>
-                  <p>
+                  <h6 data-scrolly="fromBottom">01.</h6>
+                  <h2 class="tache" data-scrolly="fromBottom">
+                    3D | Animation | Vidéo
+                  </h2>
+                  <p data-scrolly="fromBottom">
                     Une personne perdu dans l’espace qui essaye de retrouver la
                     planète<br />
                     terre. Ce projet a été réalisé en cours de
@@ -101,7 +105,7 @@
                     Ce projet utilise les applications
                     <span>Blender, Premiere pro</span>.
                   </p>
-                  <div class="imagesFlex">
+                  <div class="imagesFlex" data-scrolly="fromBottom">
                     <img
                       class="programmes"
                       id="blender"
@@ -116,14 +120,14 @@
                     />
                   </div>
 
-                  <p>
+                  <p data-scrolly="fromBottom">
                     Réalisé par : <br />
                     <span>
                       Jerry Wang <br />
                       Anthony Janes-Villiard
                     </span>
                   </p>
-                  <div class="svg-wrapper">
+                  <div class="svg-wrapper" data-scrolly="fromBottom">
                     <svg
                       height="60"
                       width="200"
@@ -137,7 +141,11 @@
                 </div>
 
                 <div class="colonne2">
-                  <svg class="Titre" viewBox="0 0 960 300">
+                  <svg
+                    class="Titre"
+                    viewBox="0 0 960 300"
+                    data-scrolly="scaleX"
+                  >
                     <symbol id="survivant-text">
                       <text text-anchor="middle" x="50%" y="80%">
                         Le Survivant
@@ -154,7 +162,12 @@
                       <use xlink:href="#survivant-text" class="text-copy"></use>
                     </g>
                   </svg>
-                  <img id="UFO" src="assets/images/ufo.png" alt="UFO" />
+                  <img
+                    id="UFO"
+                    data-scrolly="scaleX"
+                    src="assets/images/ufo.png"
+                    alt="UFO"
+                  />
                 </div>
               </article>
             </section>
@@ -164,9 +177,9 @@
             <section class="articles">
               <article class="pale">
                 <div class="colonne1">
-                  <h6>02.</h6>
-                  <h2 class="tache">Programmation</h2>
-                  <p>
+                  <h6 data-scrolly="fromBottom">02.</h6>
+                  <h2 class="tache" data-scrolly="fromBottom">Programmation</h2>
+                  <p data-scrolly="fromBottom">
                     Un boxeur pris dans un village de maison hantée. Il doit
                     trouver les <br />
                     objectifs et ensuite s’échapper de ce village. Ce projet a
@@ -176,7 +189,7 @@
                     Ce projet utilise les applications et langage
                     <span>Unity, C#</span>.
                   </p>
-                  <div class="imagesFlex">
+                  <div class="imagesFlex" data-scrolly="fromBottom">
                     <img
                       class="programmes"
                       id="Unity"
@@ -191,14 +204,14 @@
                     />
                   </div>
 
-                  <p>
+                  <p data-scrolly="fromBottom">
                     Réalisé par : <br />
                     <span>
                       Jerry Wang <br />
                       Maisons fourni par le professeur
                     </span>
                   </p>
-                  <div class="svg-wrapper">
+                  <div class="svg-wrapper" data-scrolly="fromBottom">
                     <svg
                       height="60"
                       width="200"
@@ -212,7 +225,7 @@
                 </div>
 
                 <div class="colonne2">
-                  <svg class="Boxe" viewBox="0 0 960 300">
+                  <svg class="Boxe" viewBox="0 0 960 300" data-scrolly="scaleX">
                     <symbol id="boxeur-text">
                       <text text-anchor="middle" x="50%" y="80%">
                         Le Boxeur
@@ -230,6 +243,7 @@
                     </g>
                   </svg>
                   <img
+                    data-scrolly="scaleTout"
                     id="Boxeur"
                     src="assets/images/boxeur.png"
                     alt="Boxeur"
@@ -243,9 +257,11 @@
             <section class="articles">
               <article class="impair">
                 <div class="colonne1">
-                  <h6>03.</h6>
-                  <h2 class="tache">Programmation | 3D</h2>
-                  <p>
+                  <h6 data-scrolly="fromBottom">03.</h6>
+                  <h2 class="tache" data-scrolly="fromBottom">
+                    Programmation | 3D
+                  </h2>
+                  <p data-scrolly="fromBottom">
                     Une personne essaye de s’échapper des méchants avec son
                     camion
                     <br />
@@ -257,7 +273,7 @@
                     Ce projet utilise les applications et langage
                     <span>Unity, Blender, C#</span>.
                   </p>
-                  <div class="imagesFlex">
+                  <div class="imagesFlex" data-scrolly="fromBottom">
                     <img
                       class="programmes"
                       id="blenderDark"
@@ -278,14 +294,14 @@
                     />
                   </div>
 
-                  <p>
+                  <p data-scrolly="fromBottom">
                     Réalisé par : <br />
                     <span>
                       Jerry Wang <br />
                       Dome fourni par le professeur
                     </span>
                   </p>
-                  <div class="svg-wrapper">
+                  <div class="svg-wrapper" data-scrolly="fromBottom">
                     <svg
                       height="60"
                       width="200"
@@ -299,7 +315,11 @@
                 </div>
 
                 <div class="colonne2">
-                  <svg class="mechant" viewBox="0 0 960 300">
+                  <svg
+                    class="mechant"
+                    viewBox="0 0 960 300"
+                    data-scrolly="scaleX"
+                  >
                     <symbol id="mechant-text">
                       <text text-anchor="middle" x="50%" y="80%">
                         L'invasion
@@ -317,6 +337,7 @@
                     </g>
                   </svg>
                   <img
+                    data-scrolly="scaleX"
                     id="Invasion"
                     src="assets/images/invasion.png"
                     alt="Invasion"
@@ -330,11 +351,11 @@
             <section class="articles">
               <article class="pale">
                 <div class="colonne1">
-                  <h6>04.</h6>
-                  <h2 class="tache">
+                  <h6 data-scrolly="fromBottom">04.</h6>
+                  <h2 class="tache" data-scrolly="fromBottom">
                     Front-end | Design UI/UX <br />| JavaScript
                   </h2>
-                  <p>
+                  <p data-scrolly="fromBottom">
                     Un site web évenemetiel auquel j’ai fait le
                     <span>design et le front-end</span>.<br />
                     Ce travail a été réalisé en cours de
@@ -342,7 +363,7 @@
                     Ce projet utilise les applications et langage
                     <span>Visual Studio, HTML, CSS, <br />JS</span>.
                   </p>
-                  <div class="imagesFlex">
+                  <div class="imagesFlex" data-scrolly="fromBottom">
                     <img
                       class="programmes"
                       id="HTML"
@@ -351,11 +372,11 @@
                     />
                   </div>
 
-                  <p>
+                  <p data-scrolly="fromBottom">
                     Réalisé par : <br />
                     <span> Jerry Wang <br /> </span>
                   </p>
-                  <div class="svg-wrapper">
+                  <div class="svg-wrapper" data-scrolly="fromBottom">
                     <svg
                       height="60"
                       width="200"
@@ -369,7 +390,7 @@
                 </div>
 
                 <div class="colonne2">
-                  <svg class="Boxe" viewBox="0 0 960 300">
+                  <svg class="Boxe" viewBox="0 0 960 300" data-scrolly="scaleX">
                     <symbol id="mediaConf-text">
                       <text text-anchor="middle" x="50%" y="80%">
                         MédiaConf
@@ -387,6 +408,7 @@
                     </g>
                   </svg>
                   <img
+                    data-scrolly="scaleTout"
                     id="Media"
                     src="assets/images/mediaConf.png"
                     alt="MediaConf"
@@ -400,9 +422,9 @@
             <section class="articles">
               <article class="impair">
                 <div class="colonne1">
-                  <h6>05.</h6>
-                  <h2 class="tache">Vidéo | Audio</h2>
-                  <p>
+                  <h6 data-scrolly="fromBottom">05.</h6>
+                  <h2 class="tache" data-scrolly="fromBottom">Vidéo | Audio</h2>
+                  <p data-scrolly="fromBottom">
                     Une contre-bande annonce auxquels j’utilise l’audio d’un
                     film et
                     <br />
@@ -411,7 +433,7 @@
                     <span>Réalisation Vidéo</span>. <br /><br />Ce projet
                     utilise l’application <span>Premiere Pro</span>.
                   </p>
-                  <div class="imagesFlex">
+                  <div class="imagesFlex" data-scrolly="fromBottom">
                     <img
                       class="programmes"
                       id="premiere"
@@ -420,11 +442,11 @@
                     />
                   </div>
 
-                  <p>
+                  <p data-scrolly="fromBottom">
                     Réalisé par : <br />
                     <span> Jerry Wang <br /> </span>
                   </p>
-                  <div class="svg-wrapper">
+                  <div class="svg-wrapper" data-scrolly="fromBottom">
                     <svg
                       height="60"
                       width="200"
@@ -438,7 +460,11 @@
                 </div>
 
                 <div class="colonne2">
-                  <svg class="queensman" viewBox="0 0 960 300">
+                  <svg
+                    class="queensman"
+                    viewBox="0 0 960 300"
+                    data-scrolly="scaleX"
+                  >
                     <symbol id="queensman-text">
                       <text text-anchor="middle" x="50%" y="80%">
                         Queensman
@@ -456,6 +482,7 @@
                     </g>
                   </svg>
                   <img
+                    data-scrolly="scaleX"
                     id="Invasion"
                     src="assets/images/queensman.jpg"
                     alt="Invasion"
