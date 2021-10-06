@@ -1,11 +1,11 @@
 .articles {
   display: flex;
   justify-content: space-around;
-  margin-top: 100px;
   flex-direction: column;
+
   .impair {
     margin-bottom: 27px;
-    margin-top: 27px;
+    margin-top: 50px;
   }
   article {
     display: flex;
@@ -16,7 +16,9 @@
       flex-direction: column;
       margin-right: 100px;
       #blender {
-        width: 51%;
+        width: 50%;
+        margin-right: 20px;
+        z-index: 1;
       }
     }
     span {
@@ -32,7 +34,7 @@
       flex-direction: column;
       align-items: flex-end;
       justify-content: center;
-      padding-top: 20px;
+      margin-top: 20px;
       #UFO {
         position: relative;
         bottom: 100px;
@@ -192,8 +194,8 @@
   }
   .pale {
     background-color: var(--color-primary-lighter);
-    padding-bottom: 28px;
-    padding-top: 28px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   #Unity {
     width: 50%;

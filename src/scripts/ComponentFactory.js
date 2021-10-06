@@ -6,6 +6,7 @@ import Scrolly from "./components/Scrolly";
 import Animation from "./components/animation";
 import Cursor from "./components/cursor";
 import Text from "./components/textInfini";
+import Scroll from "./components/scroll";
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
@@ -18,6 +19,7 @@ export default class ComponentFactory {
       Animation,
       Cursor,
       Text,
+      Scroll,
     };
     this.init();
   }
