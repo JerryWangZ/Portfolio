@@ -84,8 +84,8 @@ const initCanvas = () => {
     // using linear interpolation, the circle will move 0.2 (20%)
     // of the distance between its current position and the mouse
     // coordinates per Frame
-    lastX = lerp(lastX, clientX, 0.2);
-    lastY = lerp(lastY, clientY, 0.2);
+    lastX = lerp(lastX, clientX, 0.4);
+    lastY = lerp(lastY, clientY, 0.4);
     group.position = new paper.Point(lastX, lastY);
   };
 };
