@@ -1,28 +1,32 @@
 .header {
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-primary-lighter);
-
-    img {
-      max-width: 100px;
-    }
-
-    ul {
+  .wrapper {
+    nav {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      background-color: var(--color-primary-lighter);
+      position: absolute;
+      width: 100vw;
 
-      text-align: center;
+      img {
+        max-width: 100px;
+      }
 
-      li {
-        list-style: none;
-        margin-right: 50px;
-        margin-left: 50px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        a {
-          color: var(--color-text);
+        text-align: center;
+
+        li {
+          list-style: none;
+          margin-right: 50px;
+          margin-left: 50px;
+
+          a {
+            color: var(--color-text);
+          }
         }
       }
     }

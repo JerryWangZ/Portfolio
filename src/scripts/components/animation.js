@@ -220,7 +220,7 @@ thing("Yo.");
         to the next if you move your mouse very fast across the screen. That's
         also how I measure the mouse's velocity.
         */
-    w.addEventListener("mousedown", mouse_down_handler);
+    w.addEventListener("mousemove", mouse_down_handler);
     w.addEventListener("touchstart", touch_start_handler);
 
     w.addEventListener("mouseup", mouse_up_handler);
@@ -551,7 +551,7 @@ thing("Yo.");
     e.preventDefault(); //Prevents the default action from happening (e.g. navigation)
     var rect = canvas.getBoundingClientRect();
     mouse.x = mouse.px = e.touches[0].pageX - rect.left; //Set both previous and current coordinates
-    mouse.y = mouse.py = e.touches[0].pageY - rect.top;
+    mouse.y = mouse.py = e.touches[100].pageY - rect.top;
     mouse.down = true; //Sets the mouse object's "down" value to true
   }
 
