@@ -21,8 +21,8 @@
 
   <body>
     <div class="site-container" data-component="Scrolly">
-      <div class="cursor cursor--small"></div>
-      <canvas class="cursor cursor--canvas" resize></canvas>
+      <!-- <div class="cursor cursor--small"></div>
+      <canvas class="cursor cursor--canvas" resize></canvas> -->
 
       <div class="well" id="well">
         <div class="panel">
@@ -621,7 +621,10 @@
                 <div class="texte" data-scrolly="fromBottom">
                   <div class="backgroundcolor">
                     <h5>
-                      <span>Apprenti en Front-End / Programmation / Réalisation vidéo</span>
+                      <span
+                        >Apprenti en Front-End / Programmation / Réalisation
+                        vidéo</span
+                      >
                     </h5>
                     <p>
                       Je suis :<br /><br />
@@ -687,12 +690,17 @@
                   />
                 </div>
 
-                <img class="photo" src="assets/images/photo.jpg" data-scrolly="scaleTout"/>
+                <img
+                  class="photo"
+                  src="assets/images/photo.jpg"
+                  data-scrolly="scaleTout"
+                />
               </div>
             </div>
           </section>
         </div>
-        <div class="panel"><h3 id="contact" data-scrolly="fromBottom"> Contact</h3>
+        <div class="panel">
+          <h3 id="contact" data-scrolly="fromBottom">Contact</h3>
           <ul class="circles">
             <li></li>
             <li></li>
@@ -707,115 +715,107 @@
           </ul>
           <section class="petition">
             <div class="petition__content wrapper">
-
-                <form
-                    action=""
-                    class="form"
-                    autocomplete="off"
-                    data-component="Form"
-                >
-                    <div class="form__body">
-                      <div class="flexContact">
-                        <fieldset class="grid">
-                            <div class="input" data-scrolly="scaleX">
-                                <label
-                                    class="input__label"
-                                    for="lastname"
-                                    ><h4>Nom</h4></label
-                                >
-                                <input
-                                    class="input__element"
-                                    type="text"
-                                    name="lastname"
-                                    id="lastname"
-                                    placeholder="ex. : gratton"
-                                    required
-                                />
-                            </div>
-                            <div class="input" data-scrolly="scaleX">
-                                <label
-                                    class="input__label"
-                                    for="firstname"
-                                    ><h4>Prénom</h4></label
-                                >
-                                <input
-                                    class="input__element"
-                                    type="text"
-                                    name="firstname"
-                                    id="firstname"
-                                    placeholder="ex. : bob"
-                                    required
-                                />
-                            </div>
-                            <div class="input" data-scrolly="scaleX">
-                                <label class="input__label" for="email"
-                                    ><h4>Courriel</h4></label
-                                >
-                                <input
-                                    class="input__element"
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="ex. : bob.gratton@gmail.com"
-                                    required
-                                />
-                            </div>
-                            <div class="input" data-scrolly="scaleX">
-                                <label class="input__label" for="phone"
-                                    ><h4>Numéro de téléphone</h4></label
-                                >
-                                <input
-                                    class="input__element"
-                                    type="tel"
-                                    name="phone"
-                                    id="phone"
-                                    placeholder="ex. : (555) 555-5555"
-                                    pattern="^(\+\d{1,2}\s)?\(\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
-                                    required
-                                />
-                            </div>
-
-                            <div
-                                class="input textarea u-grid-fullwidth"
-                                data-scrolly="scaleX"
-                            >
-                                <label
-                                    class="input__label"
-                                    for="comment"
-                                    ><h4>Votre message</h4></label
-                                >
-                                <textarea
-                                    class="input__element"
-                                    name="comment"
-                                    id="comment"
-                                    required
-                                ></textarea>
-                            </div>
-                        </fieldset>
-                        
+              <form
+                action=""
+                class="form"
+                autocomplete="off"
+                data-component="Form"
+              >
+                <div class="form__body">
+                  <div class="flexContact">
+                    <fieldset class="grid">
+                      <div class="input" data-scrolly="scaleX">
+                        <label class="input__label" for="lastname"
+                          ><h4>Nom</h4></label
+                        >
+                        <input
+                          class="input__element"
+                          type="text"
+                          name="lastname"
+                          id="lastname"
+                          placeholder="ex. : gratton"
+                          required
+                        />
                       </div>
-                        <div class="form__footer">
-                            <div class="svg-wrapper" data-scrolly="scaleX">
-                              <svg
-                                height="60"
-                                width="200"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <rect class="shape1" height="60" width="200" />
-                                <rect class="shape2" height="60" width="500" />
-                                <h4 class="text"><a href="index.html">Envoyer</a></h4>
-                              </svg>
-                            </div>
-                        </div>
+                      <div class="input" data-scrolly="scaleX">
+                        <label class="input__label" for="firstname"
+                          ><h4>Prénom</h4></label
+                        >
+                        <input
+                          class="input__element"
+                          type="text"
+                          name="firstname"
+                          id="firstname"
+                          placeholder="ex. : bob"
+                          required
+                        />
+                      </div>
+                      <div class="input" data-scrolly="scaleX">
+                        <label class="input__label" for="email"
+                          ><h4>Courriel</h4></label
+                        >
+                        <input
+                          class="input__element"
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="ex. : bob.gratton@gmail.com"
+                          required
+                        />
+                      </div>
+                      <div class="input" data-scrolly="scaleX">
+                        <label class="input__label" for="phone"
+                          ><h4>Numéro de téléphone</h4></label
+                        >
+                        <input
+                          class="input__element"
+                          type="tel"
+                          name="phone"
+                          id="phone"
+                          placeholder="ex. : (555) 555-5555"
+                          pattern="^(\+\d{1,2}\s)?\(\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                          required
+                        />
+                      </div>
+
+                      <div
+                        class="input textarea u-grid-fullwidth"
+                        data-scrolly="scaleX"
+                      >
+                        <label class="input__label" for="comment"
+                          ><h4>Votre message</h4></label
+                        >
+                        <textarea
+                          class="input__element"
+                          name="comment"
+                          id="comment"
+                          required
+                        ></textarea>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="form__footer">
+                    <div class="svg-wrapper" data-scrolly="scaleX">
+                      <svg
+                        height="60"
+                        width="200"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect class="shape1" height="60" width="200" />
+                        <rect class="shape2" height="60" width="500" />
+                        <h4 class="text"><a href="index.html">Envoyer</a></h4>
+                      </svg>
                     </div>
-                    <div class="form__confirmation">
-                        <h2>Merci</h2>
-                        <p>votre formulaire a bien ete envoyer</p>
-                    </div>
-                </form>
-       
+                  </div>
+                </div>
+                <div class="form__confirmation">
+                  <h2>Merci</h2>
+                  <p>votre formulaire a bien ete envoyer</p>
+                </div>
+              </form>
             </div>
-        </section></div>
+          </section>
+        </div>
       </div>
     </div>
   </body>
