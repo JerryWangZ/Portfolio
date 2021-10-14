@@ -23,31 +23,29 @@
     <div class="site-container" data-component="Scrolly">
       <!-- <div class="cursor cursor--small"></div>
       <canvas class="cursor cursor--canvas" resize></canvas> -->
-
+      <input
+        class="menu-icon"
+        type="checkbox"
+        id="menu-icon"
+        name="menu-icon"
+      />
+      <label for="menu-icon"></label>
+      <nav class="nav">
+        <ul class="pt-5">
+          <li>
+            <img src="./assets/images/logo2.png" />
+          </li>
+          <li><a href="#Accueil">Accueil</a></li>
+          <li><a href="#">Projets</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
       <div class="well" id="well">
         <div class="panel">
           <canvas id="c"></canvas>
           <header class="header" id="header" data-component="Header">
-            <div class="wrapper">
-              <input
-                class="menu-icon"
-                type="checkbox"
-                id="menu-icon"
-                name="menu-icon"
-              />
-              <label for="menu-icon"></label>
-              <nav class="nav">
-                <ul class="pt-5">
-                  <li>
-                    <img src="./assets/images/logo2.png" />
-                  </li>
-                  <li><a href="#">Accueil</a></li>
-                  <li><a href="#">Projets</a></li>
-                  <li><a href="#">À propos</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
+            <div class="wrapper"></div>
           </header>
           <section class="hero">
             <hero>
@@ -89,7 +87,7 @@
             </hero>
           </section>
         </div>
-        <div class="panel" id="#projet">
+        <div class="panel">
           <section class="articles">
             <ul class="circles">
               <li></li>
@@ -251,7 +249,7 @@
               <div class="colonne2">
                 <svg class="Boxe" viewBox="40 0 960 300" data-scrolly="scaleX">
                   <symbol id="boxeur-text">
-                    <text text-anchor="middle" x="50%" y="80%">Le Boxeur</text>
+                    <text text-anchor="middle" x="35%" y="80%">Le Boxeur</text>
                   </symbol>
 
                   <g class="g-ants">
@@ -296,11 +294,7 @@
                 </h2>
                 <p data-scrolly="fromBottom">
                   Une personne essaye de s’échapper des méchants avec son camion
-                  <br />
-                  de crème glacé. Il doit tout d’abord reprendre toutes ses
-                  crèmes
-                  <br />
-                  glacées. Ce travail est réalisé en cours de
+                  de crème glacé. Ce travail est réalisé en cours de
                   <span>Méadia Intéractif III</span>.<br /><br />
                   Ce projet utilise les applications et langage
                   <span>Unity, Blender, C#</span>.
@@ -534,9 +528,9 @@
                 </svg>
                 <img
                   data-scrolly="scaleX"
-                  id="Invasion"
+                  id="Queensman"
                   src="assets/images/queensman.jpg"
-                  alt="Invasion"
+                  alt="Queensman"
                 />
               </div>
             </article>

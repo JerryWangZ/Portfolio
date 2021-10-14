@@ -17,6 +17,8 @@
       margin-right: 100px;
       justify-content: center;
       margin-bottom: 60px;
+      max-width: 30vw;
+      margin-left: 0;
 
       #blender {
         width: 50%;
@@ -25,6 +27,13 @@
       }
       @media screen and (max-width: $breakpoint-lg) {
         margin-left: 50px;
+
+        h2 {
+          margin: 0;
+        }
+        h6 {
+          margin-top: 20px;
+        }
       }
     }
     span {
@@ -41,11 +50,11 @@
       align-items: flex-end;
       justify-content: flex-start;
       height: 100vh;
-      position: relative;
-      bottom: 70px;
       #Invasion {
-        width: 1140px;
+        width: 890px;
+        height: 450px;
         border-radius: 20px;
+        margin-right: 50px;
       }
     }
     .colonne2 {
@@ -56,21 +65,28 @@
 
       #UFO {
         border-radius: 20px;
-        margin-bottom: 50px;
+        width: 950px;
+        height: 450px;
+        margin-right: 50px;
       }
       #Boxeur {
-        width: 85%;
-
+        width: 950px;
+        height: 450px;
         border-radius: 20px;
+        margin-right: 50px;
       }
 
       #Media {
-        width: 1000px;
+        width: 915px;
+        height: 450px;
         border-radius: 20px;
+        margin-right: 50px;
       }
-      #Invasion {
-        width: 1140px;
+      #Queensman {
+        width: 990px;
+        height: 450px;
         border-radius: 20px;
+        margin-right: 50px;
       }
     }
   }
@@ -96,6 +112,9 @@
       &:hover {
         color: var(--color-text-secondary);
       }
+    }
+    @media screen and (max-width: $breakpoint-lg) {
+      margin-right: 80px;
     }
   }
 
