@@ -1,6 +1,5 @@
-// const toggleButton = document.getElementsByClassName('toggle-button')[0];
-// const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+// function toggleNav() {
+//   document.getElementById("js-hamburger").classList.toggle("is-active");
 
-// toggleButton.addEventListener('click', () => {
-//   navbarLinks.classList.toggle('active');
-// });
+//   document.getElementById("js-overlay").classList.toggle("open");
+// }

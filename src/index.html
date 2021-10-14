@@ -29,67 +29,65 @@
           <canvas id="c"></canvas>
           <header class="header" id="header" data-component="Header">
             <div class="wrapper">
-              <nav>
-                <ul>
-                  <li><a href="#header">Accueil</a></li>
-                  <li><a href="#projet">Projets</a></li>
-
+              <input
+                class="menu-icon"
+                type="checkbox"
+                id="menu-icon"
+                name="menu-icon"
+              />
+              <label for="menu-icon"></label>
+              <nav class="nav">
+                <ul class="pt-5">
                   <li>
-                    <img
-                      src="assets/images/logo2.png"
-                      alt="Logo de mon portfolio"
-                    />
+                    <img src="./assets/images/logo2.png" />
                   </li>
-
+                  <li><a href="#">Accueil</a></li>
+                  <li><a href="#">Projets</a></li>
                   <li><a href="#">À propos</a></li>
                   <li><a href="#">Contact</a></li>
                 </ul>
               </nav>
             </div>
-            <section class="hero">
-              <hero>
-                <div class="container">
-                  <h1 data-scrolly="fromBottom">Jerry Wang</h1>
-                  <div class="text-container">
-                    <p class="static-text" data-scrolly="fromBottom">
-                      Je suis un :
-                    </p>
-                    <ul class="dynamic-text" data-scrolly="fromBottom">
-                      <li class="item">Front-End développeur</li>
-                      <li class="item">Programmeur Unity</li>
-                      <li class="item">Monteur Vidéo</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="svg-wrapper" data-scrolly="fromBottom">
-                  <svg
-                    height="60"
-                    width="400"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect class="shape1" height="60" width="400" />
-                    <rect class="shape2" height="60" width="500" />
-                    <h4 class="text">
-                      <a href="index.html">Télécharger mon CV</a>
-                    </h4>
-                  </svg>
-                </div>
-
-                <div class="triangles" data-scrolly="scaleX">
-                  <img
-                    src="assets/images/triangle.png"
-                    alt="Triangle vers le bas"
-                  />
-                  <h3>MES PROJETS</h3>
-                  <img
-                    src="assets/images/triangle.png"
-                    alt="Triangle vers le bas"
-                  />
-                </div>
-              </hero>
-            </section>
           </header>
+          <section class="hero">
+            <hero>
+              <div class="container">
+                <h1 data-scrolly="fromBottom">Jerry Wang</h1>
+                <div class="text-container">
+                  <p class="static-text" data-scrolly="fromBottom">
+                    Je suis un :
+                  </p>
+                  <ul class="dynamic-text" data-scrolly="fromBottom">
+                    <li class="item">Front-End développeur</li>
+                    <li class="item">Programmeur Unity</li>
+                    <li class="item">Monteur Vidéo</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="svg-wrapper" data-scrolly="fromBottom">
+                <svg height="60" width="400" xmlns="http://www.w3.org/2000/svg">
+                  <rect class="shape1" height="60" width="400" />
+                  <rect class="shape2" height="60" width="500" />
+                  <h4 class="text">
+                    <a href="index.html">Télécharger mon CV</a>
+                  </h4>
+                </svg>
+              </div>
+
+              <div class="triangles" data-scrolly="scaleX">
+                <img
+                  src="assets/images/triangle.png"
+                  alt="Triangle vers le bas"
+                />
+                <h3>MES PROJETS</h3>
+                <img
+                  src="assets/images/triangle.png"
+                  alt="Triangle vers le bas"
+                />
+              </div>
+            </hero>
+          </section>
         </div>
         <div class="panel" id="#projet">
           <section class="articles">
