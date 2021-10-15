@@ -18,12 +18,15 @@
       justify-content: center;
       margin-bottom: 60px;
       max-width: 30vw;
-      margin-left: 0;
+      margin-left: 50px;
 
       #blender {
         width: 50%;
         margin-right: 20px;
         z-index: 1;
+        @media screen and (max-width: $breakpoint-md) {
+          width: 80%;
+        }
       }
       @media screen and (max-width: $breakpoint-lg) {
         margin-left: 50px;
@@ -55,6 +58,12 @@
         height: 450px;
         border-radius: 20px;
         margin-right: 50px;
+        @media screen and (max-width: $breakpoint-md) {
+          width: 500px;
+          height: 250px;
+          margin-top: 50px;
+          margin-bottom: 175px;
+        }
       }
     }
     .colonne2 {
@@ -62,18 +71,33 @@
       flex-direction: column;
       align-items: flex-end;
       justify-content: flex-start;
+      @media screen and (max-width: $breakpoint-md) {
+        justify-content: center;
+      }
 
       #UFO {
         border-radius: 20px;
         width: 950px;
         height: 450px;
         margin-right: 50px;
+        @media screen and (max-width: $breakpoint-md) {
+          width: 500px;
+          height: 250px;
+          margin-top: 50px;
+          margin-bottom: 175px;
+        }
       }
       #Boxeur {
         width: 950px;
         height: 450px;
         border-radius: 20px;
         margin-right: 50px;
+        @media screen and (max-width: $breakpoint-md) {
+          width: 500px;
+          height: 250px;
+          margin-top: 50px;
+          margin-bottom: 175px;
+        }
       }
 
       #Media {
@@ -81,12 +105,24 @@
         height: 450px;
         border-radius: 20px;
         margin-right: 50px;
+        @media screen and (max-width: $breakpoint-md) {
+          width: 500px;
+          height: 250px;
+          margin-top: 50px;
+          margin-bottom: 175px;
+        }
       }
       #Queensman {
         width: 990px;
         height: 450px;
         border-radius: 20px;
         margin-right: 50px;
+        @media screen and (max-width: $breakpoint-md) {
+          width: 500px;
+          height: 250px;
+          margin-top: 50px;
+          margin-bottom: 175px;
+        }
       }
     }
   }
@@ -115,6 +151,9 @@
     }
     @media screen and (max-width: $breakpoint-lg) {
       margin-right: 80px;
+    }
+    @media screen and (max-width: $breakpoint-md) {
+      margin-right: 20px;
     }
   }
 
@@ -224,10 +263,16 @@
   #Unity {
     width: 50%;
     margin-right: 10px;
+    @media screen and (max-width: $breakpoint-md) {
+      width: 80%;
+    }
   }
   #blenderDark {
     width: 90%;
     margin-right: 5px;
+    @media screen and (max-width: $breakpoint-lg) {
+      width: 80%;
+    }
   }
   #UnityDark {
     width: 50%;
@@ -237,12 +282,12 @@
     width: 50%;
   }
   #HTML {
-    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
   }
   #premiere {
     position: relative;
     right: 23px;
+    width: 200%;
   }
 }
