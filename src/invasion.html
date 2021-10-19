@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le boxeur</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Raleway+Dots&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/poetsenone" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div class="site-container" data-component="Scrolly">
+      <!-- <div class="cursor cursor--small"></div>
+      <canvas class="cursor cursor--canvas" resize></canvas> -->
+      <input
+        class="menu-icon"
+        type="checkbox"
+        id="menu-icon"
+        name="menu-icon"
+      />
+      <label for="menu-icon"></label>
+      <header></header>
+      <nav class="nav">
+        <ul class="pt-5">
+          <li>
+            <img src="./assets/images/logo4.png" />
+          </li>
+          <li><a href="index.html">Accueil</a></li>
+
+          <li><a href="survivant.html">Le survivant</a></li>
+          <li><a href="boxeur.html">Le boxeur</a></li>
+          <li><a href="invasion.html">L'invasion</a></li>
+          <li><a href="mediaconf.html">MédiaConf</a></li>
+          <li><a href="queensman.html">Queensman</a></li>
+        </ul>
+      </nav>
+      <div class="well" id="well">
+        <div class="panel">
+          <canvas id="c"></canvas>
+          <div class="section1">
+            <h3 class="titre" data-scrolly="scaleX">L'invasion</h3>
+            <h2 data-scrolly="scaleX">Unity | Programmation | Blender</h2>
+            <figure class="swing">
+              <img
+                id="boxeur"
+                data-scrolly="scaleX"
+                src="assets/images/invasion.png"
+                alt="invasion"
+              />
+            </figure>
+
+            <p data-scrolly="fromBottom">
+              Ce projet a été réalisé avec <span>Unity</span> en utilisant du
+              <span>C#</span>. Je l'ai réalisé dans ma
+              <span>3e session</span> dans le cours de
+              <span>Média Intéractif III</span> . Le dome et le personnage ont
+              été fourni par le <span>professeur</span>. Ce jeu était un vrai
+              <span>défi</span>, car j'ai du aussi utiliser
+              <span>blender</span> pour cr les méchants, ainsi que mon
+              <span>camion</span> garford.
+            </p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <figure class="swing" id="Astro">
+              <img
+                id="storyboard"
+                data-scrolly="scaleX"
+                src="assets/images/camion.png"
+                alt="storyboard"
+              />
+            </figure>
+            <h4 data-scrolly="fromBottom"><span>Début du projet</span></h4>
+            <p data-scrolly="fromBottom">
+              J'ai dabord commencé avec le <span>camion</span>. Je l'ai crée à
+              l'aide de <span>Blender</span>. Cette partie du projet a été très
+              <span>difficile</span>, car je ne suis pas super habile avec
+              <span>Blender</span>. Nous avons <span>construit</span> ce camion
+              a partir d'un <span>dessin</span> que le <span>professeur</span> a
+              fourni. C'était la <span></span>première fois je travaille avec
+              autant de <span>caméra</span> en même temps sur Blender, donc j'ai
+              eu beaucoup de <span>misère</span>
+              à saisir comment ça marche au début.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <figure class="swing" id="Astro">
+              <img
+                id="storyboard"
+                data-scrolly="scaleX"
+                src="assets/images/scriptInvasion.png"
+                alt="mouvementScript"
+              />
+            </figure>
+            <h4 data-scrolly="fromBottom">
+              <span>Mes scripts</span>
+            </h4>
+            <p data-scrolly="fromBottom">
+              J'ai du faire beaucoup de <span>scripts</span> pour cette partie
+              du travaille, car je dois <span>coder</span> le
+              <span></span>mouvement, la <span>caméra</span>,<span
+                >2 intéractions</span
+              >
+              avec le camion et aussi un <span>objectif</span> dans le jeu.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <figure class="swing" id="Astro">
+              <img
+                id="astronaut"
+                data-scrolly="scaleX"
+                src="assets/images/mechantInvasion.png"
+                alt="Mechant Invasion"
+              />
+            </figure>
+            <h4 data-scrolly="fromBottom"><span>Objectif du jeu</span></h4>
+            <p data-scrolly="fromBottom">
+              Le but du jeu est d'aller récupérer les
+              <span>3 crèmes glacées</span> <span>sans</span> se faire toucher
+              par les <span>méchants</span>. Si tu te fais toucher tu
+              <span>meurts</span>. Après avoir <span>récupérer</span> les 3
+              crèmes glacées, tu peux aller <span>intéragir</span> avec la
+              <span>manivelle</span> et ensuite <span>t'enfuir</span> dans le
+              <span>camion</span> garford.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <iframe
+              width="1200"
+              height="600"
+              src="https://www.youtube.com/embed/4y8bM82fjF8"
+            >
+            </iframe>
+            <h4 data-scrolly="fromBottom"><span>Version finale</span></h4>
+            <p data-scrolly="fromBottom">
+              Voici le projet finale <span>terminé</span>. Dans la vidéo, je
+              vous <span>explique</span> comment jouer au jeu. Je démontre aussi
+              un <span>parcours complet</span> du jeu.
+            </p>
+            <div class="svg-wrapper" data-scrolly="fromBottom">
+              <svg height="60" width="500" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="60" width="500" />
+                <rect class="shape2" height="60" width="500" />
+                <h4 class="text">
+                  <a href="index.html">Retourner à l'accueil</a>
+                </h4>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
