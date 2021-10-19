@@ -1,213 +1,90 @@
-.form {
-    --input-radius: 3px;
-    --input-padding: 1em;
-
-    fieldset {
-        border: none;
-        padding: 0;
-    }
-
-    .grid {
-        display: grid;
-        gap: var(--spacing-md);
-        grid-template-columns: 1fr;
-        justify-items: center;
-        color:var(--color-secondary);
-
-        @media screen and (min-width: $breakpoint-md) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-    ::selection {
-        background: var(--color-primary);
-      }
- 
-      .svg-wrapper {
-          display:flex;
-          justify-content: flex-start;
-        position: relative;
-        right: 36.2%;
-        transform: translateY(40%);
-        text-align: center;
-        margin: 0 auto;
-        width: auto;
-    
-        h4{
-            text-decoration: underline;
-        }
-        a {
-          color: var(--color-secondary);
-          &:hover {
-            color: var(--color-text-secondary);
-          }
-        }
-      }
-    
-      .shape1,
-      .shape2 {
-        stroke-dasharray: 1120;
-        stroke-width: 5px;
-        fill: transparent;
-        stroke: var(--color-secondary);
-        border-bottom: 5px solid black;
-        transition-timing-function: linear;
-        transition: stroke-dashoffset 4s, stroke-dasharray 4s;
-      }
-      .shape1 {
-        stroke-dashoffset: 1120;
-      }
-      .shape2 {
-        stroke-dashoffset: -1120;
-      }
-      .text {
-          top:-10px;
-          right: 165px;
-        letter-spacing: 5px;
-        color: var(--color-text-titre);
-        
-        position: relative;
-      }
-      .svg-wrapper:hover .shape1,
-      .svg-wrapper:hover .shape2 {
-        stroke-dashoffset: 0;
-        stroke-dasharray: 1120;
-      }
-      a {
-        text-decoration-color: var(--color-text-titre);
-        :hover {
-          text-decoration: underline;
-        }
-        :active {
-          text-decoration: underline;
-        }
-      }
-}
-
 #contact {
+  text-align: center;
+}
+.contactIcons {
+  span {
+    color: var(--color-secondary);
+  }
+  h4 {
     text-align: center;
-   
-}
-
-.form__footer {
+  }
+  .iconsContactGros {
     display: flex;
-    justify-content: flex-start;
-}
-
-.form__body {
-    .is-sent & {
-        display: none;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    img {
+      &:hover {
+        opacity: 0.5;
+        transition: 0.5s;
+      }
     }
-    h4{
-        margin-bottom:20px;
-        margin-top:20px;
-    }
-}
-
-.form__confirmation {
-    display: none;
-
-    .is-sent & {
-        display: block;
-    }
-}
-
-.input__label {
-    display: block;
-    font-family: var(--font-primary);
-    font-weight: 600;
-}
-
-.input__element {
-    display:flex;
+  }
+  .informations {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    border-radius: var(--input-radius);
-    background-color: var(--color-white);
-    border: none;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    font-family: inherit;
-    outline: none;
-    padding: var(--input-padding);
-    width: 40vw;
-  
-
-    &:-webkit-autofill,
-    &:-webkit-autofill:active {
-        -webkit-box-shadow: inset 0 0 0 30px var(--color-white) !important;
-        -webkit-text-fill-color: inherit !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    h5 {
     }
-    //hover:)
-    &:hover,
-    + .input__label:hover::before {
-        background-color: var(--color-secondary);
-        -webkit-box-shadow: inset 0 0 0 30px var(--color-secondary) !important;
+    img {
+      margin-right: 20px;
+      margin-left: 150px;
     }
-    //focus:)
-    &:focus,
-    &:-webkit-autofill:focus,
-    &:focus + .input__label::before {
-        background-color: var(--color-secondary);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: inset 0 0 0 30px var(--color-secondary) !important;
-    }
-    //autocomplete:)
-    &::placeholder {
-        color: var(--color-black);
-    }
-}
-
-.select {
+  }
+  ::selection {
+    background: var(--color-primary);
+  }
+  .svg-wrapper {
     position: relative;
-
-    .input__element {
-        appearance: none;
-        padding-right: var(--spacing-md);
-
-        &:invalid {
-            color: var(--color-black);
-        }
+    top: 50%;
+    transform: translateY(10%);
+    margin: 0 auto;
+    width: 500px;
+    height: 80px;
+    a {
+      color: var(--color-secondary);
+      &:hover {
+        color: var(--color-text-secondary);
+      }
     }
+  }
+  .shape1,
+  .shape2 {
+    stroke-dasharray: 1120;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke: var(--color-secondary);
+    border-bottom: 5px solid black;
+    transition-timing-function: linear;
+    transition: stroke-dashoffset 4s, stroke-dasharray 4s;
+  }
+  .shape1 {
+    stroke-dashoffset: 1120;
 
-    option {
-        background-color: var(--color-white);
-        color: var(--color-black);
+    @media screen and (max-width: $breakpoint-xs) {
+      display: none;
     }
-
-    &::after {
-        --size: 12px;
-        content: '';
-        background: url('../assets/images/icon-chevron-down.svg') no-repeat 50%
-            50%;
-        background-size: 100%;
-        height: var(--size);
-        position: absolute;
-        pointer-events: none;
-        top: 50%;
-        transform: translateY(50%);
-        right: var(--input-padding);
-        width: var(--size);
+  }
+  .shape2 {
+    stroke-dashoffset: -1120;
+    @media screen and (max-width: $breakpoint-xs) {
+      display: none;
     }
-}
-
-.textarea {
-    .input__element {
-        resize: vertical;
-        height: 150px;
-    }
-}
-
-
-.checkbox {
-    .input__label::after {
-        background: url('../assets/images/icon-check.svg') no-repeat 50% 50%;
-        background-size: 50%;
-    }
-}
-
-
-
-@media screen and (max-width: $breakpoint-xs) {
-    .formulaire {
-
-    }
+  }
+  .text {
+    letter-spacing: 5px;
+    color: var(--color-text-titre);
+    top: -88px;
+    position: relative;
+    text-decoration: underline;
+  }
+  .svg-wrapper:hover .shape1,
+  .svg-wrapper:hover .shape2 {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1120;
+  }
+  a {
+    text-decoration-color: var(--color-text-titre);
+  }
 }

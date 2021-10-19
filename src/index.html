@@ -33,12 +33,15 @@
       <nav class="nav">
         <ul class="pt-5">
           <li>
-            <img src="./assets/images/logo2.png" />
+            <img src="./assets/images/logo4.png" />
           </li>
-          <li><a href="#Accueil">Accueil</a></li>
-          <li><a href="#">Projets</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html">Accueil</a></li>
+
+          <li><a href="survivant.html">Le survivant</a></li>
+          <li><a href="boxeur.html">Le boxeur</a></li>
+          <li><a href="invasion.html">L'invasion</a></li>
+          <li><a href="mediaconf.html">MédiaConf</a></li>
+          <li><a href="queensman.html">Queensman</a></li>
         </ul>
       </nav>
       <div class="well" id="well">
@@ -49,7 +52,7 @@
           </header>
           <section class="hero">
             <hero>
-              <div class="container">
+              <div class="container" id="Accueil">
                 <h1 data-scrolly="fromBottom">Jerry Wang</h1>
                 <div class="text-container">
                   <p class="static-text" data-scrolly="fromBottom">
@@ -116,18 +119,22 @@
                   <span>Blender, Premiere pro</span>.
                 </p>
                 <div class="imagesFlex" data-scrolly="fromBottom">
-                  <img
-                    class="programmes"
-                    id="blender"
-                    src="assets/images/blender.png"
-                    alt="Blender"
-                  />
-                  <img
-                    class="programmes"
-                    id="premiere"
-                    src="assets/images/premiere.png"
-                    alt="Premiere pro"
-                  />
+                  <div class="iconBlender">
+                    <img
+                      class="programmes"
+                      id="blender"
+                      src="assets/images/blender.png"
+                      alt="Blender"
+                    />
+                  </div>
+                  <div class="iconPremiere">
+                    <img
+                      class="programmes"
+                      id="premiere"
+                      src="assets/images/premiere.png"
+                      alt="Premiere pro"
+                    />
+                  </div>
                 </div>
 
                 <p data-scrolly="fromBottom" class="texteMargin">
@@ -145,7 +152,7 @@
                   >
                     <rect class="shape1" height="60" width="200" />
                     <rect class="shape2" height="60" width="500" />
-                    <h4 class="text"><a href="index.html">Voir plus</a></h4>
+                    <h4 class="text"><a href="survivant.html">Voir plus</a></h4>
                   </svg>
                 </div>
               </div>
@@ -210,18 +217,22 @@
                   <span>Unity, C#</span>.
                 </p>
                 <div class="imagesFlex" data-scrolly="fromBottom">
-                  <img
-                    class="programmes"
-                    id="Unity"
-                    src="assets/images/unity.png"
-                    alt="Unity"
-                  />
-                  <img
-                    class="programmes"
-                    id="Csharp"
-                    src="assets/images/csharp.png"
-                    alt="Csharp"
-                  />
+                  <div class="iconUnity">
+                    <img
+                      class="programmes"
+                      id="Unity"
+                      src="assets/images/unity.png"
+                      alt="Unity"
+                    />
+                  </div>
+                  <div class="iconCSharp">
+                    <img
+                      class="programmes"
+                      id="Csharp"
+                      src="assets/images/csharp.png"
+                      alt="Csharp"
+                    />
+                  </div>
                 </div>
 
                 <p data-scrolly="fromBottom" class="texteMargin">
@@ -239,7 +250,7 @@
                   >
                     <rect class="shape1" height="60" width="200" />
                     <rect class="shape2" height="60" width="500" />
-                    <h4 class="text"><a href="index.html">Voir plus</a></h4>
+                    <h4 class="text"><a href="boxeur.html">Voir plus</a></h4>
                   </svg>
                 </div>
               </div>
@@ -298,24 +309,30 @@
                   <span>Unity, Blender, C#</span>.
                 </p>
                 <div class="imagesFlex" data-scrolly="fromBottom">
-                  <img
-                    class="programmes"
-                    id="blenderDark"
-                    src="assets/images/blenderDark.png"
-                    alt="Blender"
-                  />
-                  <img
-                    class="programmes"
-                    id="UnityDark"
-                    src="assets/images/unityDark.png"
-                    alt="Unity"
-                  />
-                  <img
-                    class="programmes"
-                    id="CsharpDark"
-                    src="assets/images/cSharpDark.png"
-                    alt="Csharp"
-                  />
+                  <div class="iconBlenderDark">
+                    <img
+                      class="programmes"
+                      id="blenderDark"
+                      src="assets/images/blenderDark.png"
+                      alt="Blender"
+                    />
+                  </div>
+                  <div class="iconUnityDark">
+                    <img
+                      class="programmes"
+                      id="UnityDark"
+                      src="assets/images/unityDark.png"
+                      alt="Unity"
+                    />
+                  </div>
+                  <div class="iconCSharpDark">
+                    <img
+                      class="programmes"
+                      id="CsharpDark"
+                      src="assets/images/cSharpDark.png"
+                      alt="Csharp"
+                    />
+                  </div>
                 </div>
 
                 <p data-scrolly="fromBottom" class="texteMargin">
@@ -333,7 +350,7 @@
                   >
                     <rect class="shape1" height="60" width="200" />
                     <rect class="shape2" height="60" width="500" />
-                    <h4 class="text"><a href="index.html">Voir plus</a></h4>
+                    <h4 class="text"><a href="invasion.html">Voir plus</a></h4>
                   </svg>
                 </div>
               </div>
@@ -388,7 +405,7 @@
                 <h2 class="tache" data-scrolly="fromBottom">
                   Front-end | Design UI/UX
                 </h2>
-                <p data-scrolly="fromBottom">
+                <p data-scrolly="fromBottom" id="noMarginBot">
                   Un site web évenemetiel auquel j’ai fait le
                   <span>design et le front-end</span>. Ce travail a été réalisé
                   en cours de <span>Conception Web IV</span>.<br /><br />
@@ -396,12 +413,14 @@
                   <span>Visual Studio, HTML, CSS, JS</span>.
                 </p>
                 <div class="imagesFlex" data-scrolly="fromBottom">
-                  <img
-                    class="programmes"
-                    id="HTML"
-                    src="assets/images/html.png"
-                    alt="HTML"
-                  />
+                  <div class="iconHTML">
+                    <img
+                      class="programmes"
+                      id="HTML"
+                      src="assets/images/html.png"
+                      alt="HTML"
+                    />
+                  </div>
                 </div>
 
                 <p data-scrolly="fromBottom" class="texteMargin">
@@ -416,7 +435,7 @@
                   >
                     <rect class="shape1" height="60" width="200" />
                     <rect class="shape2" height="60" width="500" />
-                    <h4 class="text"><a href="index.html">Voir plus</a></h4>
+                    <h4 class="text"><a href="mediaconf.html">Voir plus</a></h4>
                   </svg>
                 </div>
               </div>
@@ -476,12 +495,14 @@
                   l’application <span>Premiere Pro</span>.
                 </p>
                 <div class="imagesFlex" data-scrolly="fromBottom">
-                  <img
-                    class="programmes"
-                    id="premiere"
-                    src="assets/images/premiere.png"
-                    alt="Premiere"
-                  />
+                  <div class="iconPremiereBas">
+                    <img
+                      class="programmes"
+                      id="premiere"
+                      src="assets/images/premiere.png"
+                      alt="Premiere"
+                    />
+                  </div>
                 </div>
 
                 <p data-scrolly="fromBottom" class="texteMargin">
@@ -496,7 +517,7 @@
                   >
                     <rect class="shape1" height="60" width="200" />
                     <rect class="shape2" height="60" width="500" />
-                    <h4 class="text"><a href="index.html">Voir plus</a></h4>
+                    <h4 class="text"><a href="queensman.html">Voir plus</a></h4>
                   </svg>
                 </div>
               </div>
@@ -647,41 +668,53 @@
                       Au plaisir de faire votre connaissance!
                     </p>
                   </div>
+                  <div class="iconsAPropos">
+                    <div class="iconCSharpDark">
+                      <img
+                        class="programmes"
+                        id="CsharpDark"
+                        src="assets/images/cSharpDark.png"
+                        alt="CsharpDark"
+                        data-scrolly="scaleTout"
+                      />
+                    </div>
+                    <div class="iconUnityDark">
+                      <img
+                        class="programmes"
+                        id="unityDark"
+                        src="assets/images/unityDark.png"
+                        alt="Premiere"
+                        data-scrolly="scaleTout"
+                      />
+                    </div>
+                    <div class="iconPremiere">
+                      <img
+                        class="programmes"
+                        id="premiere"
+                        src="assets/images/premiere.png"
+                        alt="Premiere"
+                        data-scrolly="scaleTout"
+                      />
+                    </div>
+                    <div class="iconHTML">
+                      <img
+                        class="programmes"
+                        id="html"
+                        src="assets/images/htmldark.png"
+                        alt="html"
+                        data-scrolly="scaleTout"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="photo">
                   <img
-                    class="programmes"
-                    id="CsharpDark"
-                    src="assets/images/cSharpDark.png"
-                    alt="CsharpDark"
-                    data-scrolly="scaleTout"
-                  />
-                  <img
-                    class="programmes"
-                    id="unityDark"
-                    src="assets/images/unityDark.png"
-                    alt="Premiere"
-                    data-scrolly="scaleTout"
-                  />
-                  <img
-                    class="programmes"
-                    id="premiere"
-                    src="assets/images/premiere.png"
-                    alt="Premiere"
-                    data-scrolly="scaleTout"
-                  />
-                  <img
-                    class="programmes"
-                    id="html"
-                    src="assets/images/htmldark.png"
-                    alt="html"
+                    class="photo"
+                    id="photo"
+                    src="assets/images/photo.jpg"
                     data-scrolly="scaleTout"
                   />
                 </div>
-
-                <img
-                  class="photo"
-                  src="assets/images/photo.jpg"
-                  data-scrolly="scaleTout"
-                />
               </div>
             </div>
           </section>
@@ -700,108 +733,77 @@
             <li></li>
             <li></li>
           </ul>
-          <section class="petition">
-            <div class="petition__content wrapper">
-              <form
-                action=""
-                class="form"
-                autocomplete="off"
-                data-component="Form"
-              >
-                <div class="form__body">
-                  <div class="flexContact">
-                    <fieldset class="grid">
-                      <div class="input" data-scrolly="scaleX">
-                        <label class="input__label" for="lastname"
-                          ><h4>Nom</h4></label
-                        >
-                        <input
-                          class="input__element"
-                          type="text"
-                          name="lastname"
-                          id="lastname"
-                          placeholder="ex. : gratton"
-                          required
-                        />
-                      </div>
-                      <div class="input" data-scrolly="scaleX">
-                        <label class="input__label" for="firstname"
-                          ><h4>Prénom</h4></label
-                        >
-                        <input
-                          class="input__element"
-                          type="text"
-                          name="firstname"
-                          id="firstname"
-                          placeholder="ex. : bob"
-                          required
-                        />
-                      </div>
-                      <div class="input" data-scrolly="scaleX">
-                        <label class="input__label" for="email"
-                          ><h4>Courriel</h4></label
-                        >
-                        <input
-                          class="input__element"
-                          type="email"
-                          name="email"
-                          id="email"
-                          placeholder="ex. : bob.gratton@gmail.com"
-                          required
-                        />
-                      </div>
-                      <div class="input" data-scrolly="scaleX">
-                        <label class="input__label" for="phone"
-                          ><h4>Numéro de téléphone</h4></label
-                        >
-                        <input
-                          class="input__element"
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          placeholder="ex. : (555) 555-5555"
-                          pattern="^(\+\d{1,2}\s)?\(\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
-                          required
-                        />
-                      </div>
-
-                      <div
-                        class="input textarea u-grid-fullwidth"
-                        data-scrolly="scaleX"
-                      >
-                        <label class="input__label" for="comment"
-                          ><h4>Votre message</h4></label
-                        >
-                        <textarea
-                          class="input__element"
-                          name="comment"
-                          id="comment"
-                          required
-                        ></textarea>
-                      </div>
-                    </fieldset>
-                  </div>
-                  <div class="form__footer">
-                    <div class="svg-wrapper" data-scrolly="scaleX">
-                      <svg
-                        height="60"
-                        width="200"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect class="shape1" height="60" width="200" />
-                        <rect class="shape2" height="60" width="500" />
-                        <h4 class="text"><a href="index.html">Envoyer</a></h4>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="form__confirmation">
-                  <h2>Merci</h2>
-                  <p>votre formulaire a bien ete envoyer</p>
-                </div>
-              </form>
+          <div class="contactIcons">
+            <h4 data-scrolly="fromBottom">
+              Merci d'avoir pris le <span>temps </span>de regarder mon
+              portfolio. <br />
+              Voici quelques <span>informations</span> utiles pour me
+              <span>rejoindre</span>.
+            </h4>
+            <div class="iconsContactGros">
+              <a
+                href="https://www.youtube.com/channel/UCZ8KjozYtgp-q8VlsuJFBMw"
+                target="blank"
+                ><img
+                  class="iconsContact"
+                  id="youtube"
+                  src="assets/images/youtube.png"
+                  data-scrolly="scaleTout"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/jerry-wang-226275221/"
+                target="blank"
+                ><img
+                  class="iconsContact"
+                  id="linkedin"
+                  src="assets/images/linkedin.png"
+                  data-scrolly="scaleTout"
+              /></a>
+              <a href="https://github.com/JerryWangZ" target="blank"
+                ><img
+                  class="iconsContact"
+                  id="github"
+                  src="assets/images/github.png"
+                  data-scrolly="scaleTout"
+              /></a>
+              <a href="https://codepen.io/jerrywangz" target="blank"
+                ><img
+                  class="iconsContact"
+                  id="codepen"
+                  src="assets/images/codepen.png"
+                  data-scrolly="scaleTout"
+              /></a>
             </div>
-          </section>
+            <div class="informations">
+              <div class="photo">
+                <img
+                  class="iconsContact"
+                  id="telephone"
+                  src="assets/images/telephone.png"
+                  data-scrolly="scaleTout"
+                />
+              </div>
+              <h5 data-scrolly="scaleX">514-975-1198</h5>
+              <div class="photo">
+                <img
+                  class="iconsContact"
+                  id="courriel"
+                  src="assets/images/courriel.png"
+                  data-scrolly="scaleTout"
+                />
+              </div>
+              <h5 data-scrolly="scaleX">jerrywang0129@hotmail.com</h5>
+            </div>
+            <div class="svg-wrapper" data-scrolly="fromBottom">
+              <svg height="60" width="500" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="60" width="500" />
+                <rect class="shape2" height="60" width="500" />
+                <h4 class="text">
+                  <a href="index.html">Télécharger mon CV</a>
+                </h4>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>

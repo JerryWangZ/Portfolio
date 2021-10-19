@@ -19,15 +19,112 @@
       margin-bottom: 60px;
       max-width: 30vw;
       margin-left: 50px;
-
-      #blender {
-        width: 50%;
-        margin-right: 20px;
+      .iconBlender {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
         z-index: 1;
-        @media screen and (max-width: $breakpoint-md) {
-          width: 80%;
+        #blender {
+          width: 100%;
+          height: 100%;
         }
       }
+      .iconPremiere {
+        width: 52px;
+        height: 52px;
+        object-fit: cover;
+        z-index: 1;
+        margin-left: 10px;
+        #premiere {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .iconUnity {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        z-index: 1;
+        #Unity {
+          width: 100%;
+          height: 100%;
+
+          @media screen and (max-width: $breakpoint-md) {
+            width: 80%;
+          }
+        }
+      }
+      .iconCSharp {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        z-index: 1;
+        margin-left: 10px;
+        #Csharp {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .iconBlenderDark {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+
+        #blenderDark {
+          width: 100%;
+          height: 100%;
+          @media screen and (max-width: $breakpoint-lg) {
+            width: 80%;
+          }
+        }
+      }
+      .iconUnityDark {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        #UnityDark {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .iconCSharpDark {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        margin-left: 10px;
+
+        #CsharpDark {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .iconHTML {
+        width: 150px;
+        height: 60px;
+        object-fit: cover;
+        margin-bottom: 20px;
+
+        #HTML {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .iconPremiereBas {
+        width: 52px;
+        height: 52px;
+        object-fit: cover;
+        z-index: 1;
+
+        #premiere {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
       @media screen and (max-width: $breakpoint-lg) {
         margin-left: 50px;
 
@@ -44,7 +141,7 @@
     }
     .imagesFlex {
       display: flex;
-      width: 20%;
+
       align-items: center;
     }
     .colonne2Mechant {
@@ -260,34 +357,9 @@
     background-color: var(--color-primary-lighter);
     height: 100vh;
   }
-  #Unity {
-    width: 50%;
-    margin-right: 10px;
-    @media screen and (max-width: $breakpoint-md) {
-      width: 80%;
-    }
-  }
-  #blenderDark {
-    width: 90%;
-    margin-right: 5px;
-    @media screen and (max-width: $breakpoint-lg) {
-      width: 80%;
-    }
-  }
-  #UnityDark {
-    width: 50%;
-    margin-right: 15px;
-  }
-  #CsharpDark {
-    width: 50%;
-  }
+
   #HTML {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-  #premiere {
-    position: relative;
-    right: 23px;
-    width: 200%;
   }
 }

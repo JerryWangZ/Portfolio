@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon portfolio</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Raleway+Dots&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/poetsenone" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div class="site-container" data-component="Scrolly">
+      <!-- <div class="cursor cursor--small"></div>
+      <canvas class="cursor cursor--canvas" resize></canvas> -->
+      <input
+        class="menu-icon"
+        type="checkbox"
+        id="menu-icon"
+        name="menu-icon"
+      />
+      <label for="menu-icon"></label>
+      <header></header>
+      <nav class="nav">
+        <ul class="pt-5">
+          <li>
+            <img src="./assets/images/logo4.png" />
+          </li>
+          <li><a href="#Accueil">Accueil</a></li>
+          <li><a href="#">Projets</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="well" id="well">
+        <div class="panel">
+          <canvas id="c"></canvas>
+          <div class="section1">
+            <h3 class="titre">Le survivant</h3>
+            <h2>3D | Animation | Vidéo</h2>
+            <figure class="swing">
+              <img
+                id="UFO"
+                data-scrolly="scaleX"
+                src="assets/images/ufo.png"
+                alt="UFO"
+              />
+            </figure>
+
+            <p>
+              Voici un projet réalisé avec du
+              <span>3D, montage vidéo et montage de son</span>. Le projet a été
+              réalisé durant ma 4e session dans le cours de
+              <span>Réalisation Vidéo</span>. Ce projet a été réalisé par
+              <span>Jerry Wang et Anthony Janes-Villiard</span>. Ce projet
+              utilise les applications <span>Blender et Premiere pro</span>. Ce
+              projet m'a permis d'apprendre plusieurs nouveaux fonctions pour
+              monter des vidéos et sons. Anthony a fait la partie en 3D et moi
+              le <span>montage</span> de toute l'ensemble.
+            </p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <div class="storyboard">
+              <img
+                id="storyboard"
+                data-scrolly="scaleX"
+                src="assets/images/storyboard.png"
+                alt="storyboard"
+              />
+            </div>
+            <h4><span>Début du projet</span></h4>
+            <p>
+              Nous avons tout dabord commencé avec le <span>storyboard</span>.
+              Nous rassemblons nos <span>idées</span> et essaye de crée notre
+              histoire. On met nos idées en dessins et fait un
+              <span>brainstorming</span>. Cette étape était relativement facile,
+              nous avons rapidement trouvé se qu'on veut faire. Nous avons
+              finalement décidé sur un <span>astrounaut perdu</span> dans
+              l'espace qui essaye de retrouver la planète Terre.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <div class="storyboard">
+              <img
+                id="storyboard"
+                data-scrolly="scaleX"
+                src="assets/images/makehuman.png"
+                alt="makehuman"
+              />
+            </div>
+            <h4><span>Création du personnage</span></h4>
+            <p>
+              Suivi de notre storyboard, j'ai
+              <span>crée le personnage</span> qu'on va utilisé pour notre
+              projet. Le personnage a été crée sur <span>MakeHuman</span>. Après
+              avoir crée le personnage, nous avons ensuite choisi les différents
+              <span>animations</span> qu'il va avoir de besoin sur
+              <span>Mixamo</span>. Suivi de cela, nous l'avons intégré dans
+              blender et Anthony a crée les autres objets en 3D sur blender.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <div class="storyboard">
+              <img
+                id="storyboard"
+                data-scrolly="scaleX"
+                src="assets/images/astronautPremiere.png"
+                alt="astronaut"
+              />
+            </div>
+            <h4><span>Montage du projet</span></h4>
+            <p>
+              Après que le 3D soit fini, j'ai <span>monté</span> le tout en
+              utilisant <span>Premiere Pro</span>. J'ai été chercher des
+              <span>sons</span> avec droit d'utilisation et je les mets pour que
+              sa soit <span>synchronisé</span> avec la vidéo. Une des
+              <span>difficultés</span> que j'ai rencontré dans cette partie,
+              c'est de bien mettre les sons avec le bon <span>volume</span> au
+              bon moment. Trouver les bons <span>effets sonores</span> qui
+              synchronise bien avec la vidéo a aussi été un défi.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <iframe
+              width="1200"
+              height="600"
+              src="https://www.youtube.com/embed/NZ9xy2xp6HY"
+            >
+            </iframe>
+            <h4><span>Version finale</span></h4>
+            <p>
+              Après le montage, il nous restait juste à le mettre sur
+              <span>YouTube</span>. Voici la <span>version finale</span> de
+              notre projet. Ce projet a été entieremment réalisé par
+              <span>Jerry Wang</span> et <span>Anthony Janes-Villiard</span>.
+            </p>
+            <div class="svg-wrapper" data-scrolly="fromBottom">
+              <svg height="60" width="500" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="60" width="500" />
+                <rect class="shape2" height="60" width="500" />
+                <h4 class="text">
+                  <a href="index.html">Retourner à l'accueil</a>
+                </h4>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
