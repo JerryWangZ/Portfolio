@@ -8,6 +8,7 @@ import Cursor from "./components/cursor";
 import Text from "./components/textInfini";
 import Scroll from "./components/scroll";
 import HoverContact from "./components/hoverContact";
+import Slider from "./components/slider";
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
@@ -22,6 +23,7 @@ export default class ComponentFactory {
       Text,
       Scroll,
       HoverContact,
+      Slider,
     };
     this.init();
   }

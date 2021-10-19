@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le boxeur</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Raleway+Dots&family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/poetsenone" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div class="site-container" data-component="Scrolly">
+      <!-- <div class="cursor cursor--small"></div>
+      <canvas class="cursor cursor--canvas" resize></canvas> -->
+      <input
+        class="menu-icon"
+        type="checkbox"
+        id="menu-icon"
+        name="menu-icon"
+      />
+      <label for="menu-icon"></label>
+      <header></header>
+      <nav class="nav">
+        <ul class="pt-5">
+          <li>
+            <img src="./assets/images/logo4.png" />
+          </li>
+          <li><a href="index.html">Accueil</a></li>
+
+          <li><a href="survivant.html">Le survivant</a></li>
+          <li><a href="boxeur.html">Le boxeur</a></li>
+          <li><a href="invasion.html">L'invasion</a></li>
+          <li><a href="mediaconf.html">MédiaConf</a></li>
+          <li><a href="queensman.html">Queensman</a></li>
+        </ul>
+      </nav>
+      <div class="well" id="well">
+        <div class="panel">
+          <canvas id="c"></canvas>
+          <div class="section1">
+            <h3 class="titre" data-scrolly="scaleX">MédiaConf</h3>
+            <h2 data-scrolly="scaleX">Front-End | Design UI/UX</h2>
+            <figure class="swing">
+              <img
+                id="boxeur"
+                data-scrolly="scaleX"
+                src="assets/images/mediaConf.png"
+                alt="mediaConf"
+              />
+            </figure>
+
+            <p data-scrolly="fromBottom">
+              Ce projet a été réalisé avec <span>Visual Studio</span> et
+              <span>Figma</span>. J'ai fait ce site en
+              <span>4e session</span> dans le cours de
+              <span>Conception Web IV</span>. J'ai fait le site à partir de
+              <span>zéro</span>, donc j'ai fait le <span>design UI/UX</span> et
+              ensuite le <span>front-end</span> du site.
+            </p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <figure class="swing" id="Astro">
+              <img
+                id="storyboard"
+                data-scrolly="scaleX"
+                src="assets/images/mediaConfFigma.png"
+                alt="storyboard"
+              />
+            </figure>
+
+            <h4 data-scrolly="fromBottom"><span>Début du projet</span></h4>
+            <p data-scrolly="fromBottom">
+              J'ai dabord commencé avec le <span>design du site</span>. Je l'ai
+              crée à l'aide de <span>Figma</span>. Je ne suis pas le meilleur en
+              design, donc j'ai eu de la <span>misère</span> avec ça. C'est un
+              <span>site web</span> évenemetiel avec <span>3 pages</span> de
+              contenu.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <figure class="swing" id="Astro">
+              <img
+                id="storyboard"
+                data-scrolly="scaleX"
+                src="assets/images/heroMedia.jpg"
+                alt="heroMediaConf"
+              />
+            </figure>
+            <h4 data-scrolly="fromBottom">
+              <span>Explication du site</span>
+            </h4>
+            <p data-scrolly="fromBottom">
+              Ce site vien avec un <span>header</span> qui disparaît lorsqu'on
+              descend un certain <span>hauteur</span>. J'ai aussi fait un
+              <span>snackbar</span> qui fonctionne exactement comme des
+              <span>cookies</span>. La page utilise aussi du
+              <span>scrolly telling</span>. J'ai aussi explorer des
+              <span>animations</span> et des changements que je peux faire avec
+              <span>YouTube</span>.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <figure class="swing" id="Astro">
+              <img
+                id="astronaut"
+                data-scrolly="scaleX"
+                src="assets/images/mechantInvasion.png"
+                alt="Mechant Invasion"
+              />
+            </figure>
+            <h4 data-scrolly="fromBottom"><span>Objectif du jeu</span></h4>
+            <p data-scrolly="fromBottom">
+              Le but du jeu est d'aller récupérer les
+              <span>3 crèmes glacées</span> <span>sans</span> se faire toucher
+              par les <span>méchants</span>. Si tu te fais toucher tu
+              <span>meurts</span>. Après avoir <span>récupérer</span> les 3
+              crèmes glacées, tu peux aller <span>intéragir</span> avec la
+              <span>manivelle</span> et ensuite <span>t'enfuir</span> dans le
+              <span>camion</span> garford.
+            </p>
+          </div>
+        </div>
+        <div class="panel">
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="section2">
+            <iframe
+              width="1200"
+              height="600"
+              src="https://www.youtube.com/embed/4y8bM82fjF8"
+            >
+            </iframe>
+            <h4 data-scrolly="fromBottom"><span>Version finale</span></h4>
+            <p data-scrolly="fromBottom">
+              Voici le projet finale <span>terminé</span>. Dans la vidéo, je
+              vous <span>explique</span> comment jouer au jeu. Je démontre aussi
+              un <span>parcours complet</span> du jeu.
+            </p>
+            <div class="svg-wrapper" data-scrolly="fromBottom">
+              <svg height="60" width="500" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="60" width="500" />
+                <rect class="shape2" height="60" width="500" />
+                <h4 class="text">
+                  <a href="index.html">Retourner à l'accueil</a>
+                </h4>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
