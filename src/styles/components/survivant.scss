@@ -1,6 +1,6 @@
 .section1 {
   p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-top: 50px;
   }
   display: flex;
@@ -99,7 +99,7 @@
     margin-bottom: 0;
   }
   p {
-    font-size: 1.2em;
+    font-size: 1.4em;
 
     margin-top: 50px;
   }
@@ -223,6 +223,17 @@
     border-radius: 50% 50%;
     background: #000;
   }
+  #horaire:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -14px;
+    left: 50.6%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+  }
 
   @keyframes swing {
     0% {
@@ -230,6 +241,15 @@
     }
     100% {
       transform: rotate(-3deg);
+    }
+  }
+  .iconsContact {
+    transition: 1s;
+    width: 130px;
+    &:hover {
+      opacity: 0.5;
+      color: var(--color-secondary);
+      transition: 0.5s;
     }
   }
 }
