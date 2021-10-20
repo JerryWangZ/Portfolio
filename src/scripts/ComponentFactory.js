@@ -1,28 +1,19 @@
-import Carousel from "./components/Carousel";
-// import Header from "./components/Header";
-import Modal from "./components/Modal";
 import Scrolly from "./components/Scrolly";
-// import menuHamburger from "./components/menuHamburger";
 import Animation from "./components/animation";
 import Cursor from "./components/cursor";
 import Text from "./components/textInfini";
 import Scroll from "./components/scroll";
-import HoverContact from "./components/hoverContact";
 import Slider from "./components/slider";
 export default class ComponentFactory {
   constructor() {
     this.componentInstances = [];
     this.componentList = {
-      Carousel,
-      // Header,
-      Modal,
       Scrolly,
-      // menuHamburger,
       Animation,
       Cursor,
       Text,
       Scroll,
-      HoverContact,
+
       Slider,
     };
     this.init();
