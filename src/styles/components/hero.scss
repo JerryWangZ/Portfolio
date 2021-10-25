@@ -50,6 +50,11 @@
         font-size: 20px;
       }
     }
+    @media screen and (max-width: $breakpoint-s) {
+      p {
+        font-size: 20px;
+      }
+    }
   }
 
   .text-container {
@@ -62,6 +67,10 @@
       font-size: 30px;
     }
     @media screen and (max-width: $breakpoint-xs) {
+      font-size: 20px;
+      margin-right: 100px;
+    }
+    @media screen and (max-width: $breakpoint-s) {
       font-size: 20px;
       margin-right: 100px;
     }
@@ -125,6 +134,20 @@
       }
     }
   }
+  @media screen and (max-width: $breakpoint-s) {
+    @keyframes move {
+      0% {
+        top: 0px;
+      }
+      35% {
+        top: -30px;
+      }
+      70% {
+        top: -65px;
+      }
+    }
+  }
+
   @media screen and (max-width: $breakpoint-xs) {
     @keyframes move {
       0% {
@@ -207,13 +230,19 @@
         margin-left: 20px;
       }
     }
+    @media screen and (max-width: $breakpoint-s) {
+      margin-top: 0;
+      justify-content: space-around;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+      margin-top: 0px;
+      justify-content: space-evenly;
+    }
     @media screen and (max-width: $breakpoint-xs) {
       margin-top: 0;
       justify-content: center;
     }
-    @media screen and (max-width: $breakpoint-sm) {
-      margin-top: 0px;
-    }
+
     @media screen and (max-width: $breakpoint-md) {
       margin-top: 100px;
       h3 {
@@ -254,6 +283,27 @@
 }
 
 @media screen and (max-width: $breakpoint-xs) {
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 0.5rem;
+  }
+  h6 {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: $breakpoint-s) {
   h1 {
     font-size: 3.6rem;
   }
