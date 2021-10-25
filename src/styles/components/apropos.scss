@@ -1,87 +1,329 @@
 .apropos {
   .pageUn {
     display: flex;
+    @media screen and (max-width: $breakpoint-s) {
+      flex-direction: column;
+      text-align: center;
+    }
+
     .Qualite {
       display: flex;
+
       flex-direction: column;
       justify-content: space-evenly;
+      @media screen and (max-width: $breakpoint-md) {
+        h3 {
+          font-size: 2em;
+        }
+        margin-top: 180px;
+      }
+
+      @media screen and (max-width: $breakpoint-sm) {
+        h3 {
+          font-size: 1.7em;
+        }
+      }
+      @media screen and (max-width: $breakpoint-s) {
+        display: initial;
+
+        margin: 0;
+      }
 
       #ouvert {
         color: var(--color-text);
         position: relative;
         right: 150px;
+        @media screen and (max-width: $breakpoint-s) {
+          margin: 0;
+          right: -90px;
+          bottom: 370px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+          right: -40px;
+          bottom: 330px;
+          transform: rotate(-30deg);
+        }
       }
       #ingenieux {
         padding-bottom: 30px;
+        @media screen and (max-width: $breakpoint-s) {
+          position: relative;
+          margin: 0;
+          right: -90px;
+          bottom: 300px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+          transform: rotate(-20deg);
+        }
       }
       #ambitieux {
         color: var(--color-text);
         margin-left: 40px;
+        @media screen and (max-width: $breakpoint-sm) {
+          margin-left: 10px;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          position: relative;
+          margin: 0;
+          right: -110px;
+          bottom: 250px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+          right: -85px;
+        }
       }
       #devoue {
         margin-bottom: 250px;
         margin-left: 50px;
+        @media screen and (max-width: $breakpoint-sm) {
+          margin-left: 30px;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          position: relative;
+          margin: 0;
+          right: -90px;
+          bottom: 200px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+          right: -70px;
+        }
       }
     }
     #megaphone {
       margin-top: 300px;
       width: 40%;
+      @media screen and (max-width: $breakpoint-md) {
+        width: 30%;
+        height: 30%;
+        margin-top: 400px;
+      }
+      @media screen and (max-width: $breakpoint-s) {
+        margin-top: 200px;
+        width: 40%;
+        height: 40%;
+        margin-left: 50px;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        margin-top: 250px;
+        width: 50%;
+        height: 50%;
+        margin-left: 5px;
+        transform: rotate(-5deg);
+      }
     }
     .titreApropos {
       display: flex;
       flex-direction: column;
       margin: 0;
+      @media screen and (max-width: $breakpoint-s) {
+        display: initial;
+      }
+      .invisflex {
+        @media screen and (max-width: $breakpoint-s) {
+          display: flex;
+          margin-top: 15px;
+          justify-content: center;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+          margin-top: 50px;
+        }
+      }
+      .invisflex2 {
+        @media screen and (max-width: $breakpoint-s) {
+          display: flex;
+          justify-content: center;
+        }
+      }
       h2 {
         margin: 0;
         margin-left: 80px;
+        @media screen and (max-width: $breakpoint-s) {
+          margin: 0;
+        }
       }
       h1 {
         margin: 0;
         margin-left: 200px;
         font-size: 5em;
+        @media screen and (max-width: $breakpoint-s) {
+          margin: 0;
+        }
       }
       #Jerry {
+        @media screen and (max-width: $breakpoint-sm) {
+          font-size: 2.5em;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          font-size: 4em;
+        }
       }
       #jeSuis {
         padding-left: 60px;
+        @media screen and (max-width: $breakpoint-sm) {
+          font-size: 1.8em;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          margin: 0;
+          padding: 0;
+          font-size: 3em;
+          margin-left: 10px;
+        }
+      }
+      @media screen and (max-width: $breakpoint-s) {
+        br {
+          display: none;
+        }
       }
       #Wang {
         font-size: 4em;
         padding-left: 15px;
         position: relative;
         bottom: 45px;
+        @media screen and (max-width: $breakpoint-sm) {
+          font-size: 2.5em;
+          margin-top: 30px;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          font-size: 4em;
+          bottom: 0;
+          margin-top: 0;
+        }
       }
       #salut {
         margin-top: 80px;
+        @media screen and (max-width: $breakpoint-sm) {
+          font-size: 1.8em;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          margin-top: 0px;
+          font-size: 3em;
+        }
       }
       #bulle1 {
         width: 15%;
         margin-left: 48px;
+        @media screen and (max-width: $breakpoint-md) {
+          width: 10%;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          display: none;
+        }
       }
       #bulle2 {
         width: 15%;
         margin-left: 281px;
         margin-top: 20px;
+        @media screen and (max-width: $breakpoint-md) {
+          width: 10%;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          display: none;
+        }
       }
       #bulle3 {
         width: 15%;
         margin-left: 159px;
         margin-top: 50px;
+        @media screen and (max-width: $breakpoint-md) {
+          width: 10%;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          display: none;
+        }
       }
       .bullesFlex {
         display: flex;
+        display: initial;
       }
     }
   }
 }
 
 .apropos2 {
-  .wrapper {
+  .photoInvis {
+    display: none;
+    @media screen and (max-width: $breakpoint-s) {
+      display: flex;
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      margin-bottom: 5px;
+      #photoInvis {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+      display: flex;
+      width: 110px;
+      height: 110px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      margin-bottom: 20px;
+      #photoInvis {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
   h3 {
     text-align: center;
+    @media screen and (max-width: $breakpoint-lg) {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
   }
   .pagedeux {
+    @media screen and (max-width: $breakpoint-lg) {
+      margin-left: 50px;
+      margin-right: 50px;
+      p {
+        margin: 0;
+      }
+      h5 {
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+      @media screen and (max-width: $breakpoint-md) {
+        p {
+          font-size: 0.9em;
+        }
+        h5 {
+          font-size: 1.03em;
+        }
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        p {
+          font-size: 0.85em;
+          padding-top: 5px;
+        }
+      }
+      @media screen and (max-width: $breakpoint-s) {
+        p {
+          font-size: 0.74em;
+          padding-top: 5px;
+        }
+        h5 {
+          font-size: 0.9em;
+        }
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        p {
+          font-size: 0.7em;
+          padding-top: 5px;
+        }
+        h5 {
+          font-size: 0.8em;
+        }
+      }
+    }
     .wrapper {
       display: flex;
       justify-content: center;
@@ -99,11 +341,34 @@
           width: 100%;
           height: 100%;
         }
+        @media screen and (max-width: $breakpoint-lg) {
+          margin-right: 70px;
+        }
+        @media screen and (max-width: $breakpoint-md) {
+          width: 500px;
+          height: 400px;
+          margin-left: 15px;
+          margin-right: 15px;
+          margin-bottom: 0;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+          width: 400px;
+          height: 300px;
+          margin-left: 15px;
+          margin-right: 15px;
+          margin-bottom: 0;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          display: none;
+        }
       }
     }
     .iconsAPropos {
       display: flex;
       align-items: baseline;
+      @media screen and (max-width: $breakpoint-lg) {
+        margin-top: 15px;
+      }
 
       .iconPremiere {
         width: 52px;
@@ -115,6 +380,10 @@
         #premiere {
           width: 100%;
           height: 100%;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          width: 40px;
+          height: 40px;
         }
       }
 
@@ -129,6 +398,10 @@
           width: 100%;
           height: 100%;
         }
+        @media screen and (max-width: $breakpoint-s) {
+          width: 40px;
+          height: 40px;
+        }
       }
       .iconCSharpDark {
         width: 50px;
@@ -138,6 +411,10 @@
         #CsharpDark {
           width: 100%;
           height: 100%;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          width: 40px;
+          height: 40px;
         }
       }
 
@@ -151,6 +428,10 @@
         #HTML {
           width: 100%;
           height: 100%;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          width: 110px;
+          height: 40px;
         }
       }
     }
