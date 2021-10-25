@@ -4,12 +4,218 @@
   flex-direction: column;
   height: 100vh;
 
+  @media screen and (max-width: $breakpoint-sm) {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .colonne2Invisible {
+    display: none;
+    flex-direction: column;
+
+    justify-content: center;
+    padding-right: 15px;
+
+    @media screen and (max-width: $breakpoint-md) {
+      justify-content: center;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+      display: flex;
+    }
+
+    #UFO {
+      border-radius: 20px;
+      width: 880px;
+      height: 450px;
+      margin-right: 50px;
+
+      @media screen and (max-width: $breakpoint-md) {
+        width: 500px;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 175px;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        width: 500px;
+        height: 250px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+    }
+    #Boxeur {
+      width: 880px;
+      height: 450px;
+      border-radius: 20px;
+      margin-right: 50px;
+      @media screen and (max-width: $breakpoint-md) {
+        width: 500px;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 175px;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        width: 500px;
+        height: 250px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+    }
+
+    #Media {
+      width: 915px;
+      height: 450px;
+      border-radius: 20px;
+      margin-right: 50px;
+      @media screen and (max-width: $breakpoint-md) {
+        width: 500px;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 175px;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        width: 500px;
+        height: 250px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+    }
+    #Queensman {
+      width: 900px;
+      height: 450px;
+      border-radius: 20px;
+      margin-right: 50px;
+      @media screen and (max-width: $breakpoint-md) {
+        width: 500px;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 175px;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        width: 500px;
+        height: 250px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+    }
+    .Titre {
+      font: 8em var(--font-primary);
+    }
+    .Boxe {
+      font: 8em var(--font-primary);
+      @media screen and (max-width: $breakpoint-sm) {
+        height: 130px;
+        font-size: 10em;
+        width: 600px;
+      }
+    }
+    .mediaConf {
+      font: 8em var(--font-primary);
+      @media screen and (max-width: $breakpoint-sm) {
+        height: 130px;
+        font-size: 10em;
+        width: 600px;
+      }
+    }
+    .mechant {
+      font: 8em var(--font-primary);
+    }
+    .queensman {
+      font: 8em var(--font-primary);
+      @media screen and (max-width: $breakpoint-sm) {
+        height: 130px;
+        font-size: 10em;
+        width: 600px;
+      }
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+      .Titre {
+        font: 10em var(--font-primary);
+        height: 130px;
+      }
+    }
+    .text-copy {
+      fill: none;
+      stroke-dasharray: 6% 29%;
+      stroke-width: 5px;
+      stroke-dashoffset: 0%;
+      animation: stroke-offset 5.5s infinite linear;
+    }
+
+    .text-copy:nth-child(1) {
+      stroke: #d9ed92;
+      animation-delay: -1;
+    }
+
+    .text-copy:nth-child(2) {
+      stroke: #b5e48c;
+      animation-delay: -2s;
+    }
+
+    .text-copy:nth-child(3) {
+      stroke: #99d98c;
+      animation-delay: -3s;
+    }
+
+    .text-copy:nth-child(4) {
+      stroke: #76c893;
+      animation-delay: -4s;
+    }
+
+    .text-copy:nth-child(5) {
+      stroke: #52b69a;
+      animation-delay: -5s;
+    }
+    .text-copy:nth-child(6) {
+      stroke: #34a0a4;
+      animation-delay: -6s;
+    }
+
+    .text-copy:nth-child(7) {
+      stroke: #168aad;
+      animation-delay: -7s;
+    }
+
+    @keyframes stroke-offset {
+      100% {
+        stroke-dashoffset: -35%;
+      }
+    }
+  }
+  .colonne2MechantInvisible {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-left: 50px;
+      #Invasion {
+        width: 500px;
+        height: 250px;
+        border-radius: 20px;
+        margin-right: 50px;
+      }
+    }
+  }
+
   .impair {
     height: 100vh;
   }
   article {
     display: flex;
     justify-content: center;
+    @media screen and (max-width: $breakpoint-sm) {
+      flex-direction: column;
+      p {
+        font-size: 14px;
+      }
+    }
 
     .colonne1 {
       display: flex;
@@ -19,6 +225,14 @@
       margin-bottom: 60px;
       max-width: 30vw;
       margin-left: 50px;
+      @media screen and (max-width: $breakpoint-sm) {
+        margin-right: 0px;
+        max-width: 100vw;
+        margin-left: 0;
+        margin-bottom: 0px;
+        display: initial;
+      }
+
       .iconBlender {
         width: 50px;
         height: 50px;
@@ -52,6 +266,10 @@
           @media screen and (max-width: $breakpoint-md) {
             width: 80%;
           }
+          @media screen and (max-width: $breakpoint-sm) {
+            width: 100%;
+            height: 100%;
+          }
         }
       }
       .iconCSharp {
@@ -75,6 +293,10 @@
           height: 100%;
           @media screen and (max-width: $breakpoint-lg) {
             width: 80%;
+          }
+          @media screen and (max-width: $breakpoint-sm) {
+            width: 100%;
+            height: 100%;
           }
         }
       }
@@ -135,6 +357,11 @@
           margin-top: 20px;
         }
       }
+      @media screen and (max-width: $breakpoint-sm) {
+        h6 {
+          display: none;
+        }
+      }
     }
     span {
       color: var(--color-secondary);
@@ -150,11 +377,15 @@
       align-items: flex-end;
       justify-content: center;
       margin-bottom: 150px;
+      @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+      }
       #Invasion {
         width: 890px;
         height: 450px;
         border-radius: 20px;
         margin-right: 50px;
+
         @media screen and (max-width: $breakpoint-md) {
           width: 500px;
           height: 250px;
@@ -163,12 +394,16 @@
         }
       }
     }
+
     .colonne2 {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       justify-content: center;
       margin-bottom: 150px;
+      @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+      }
       @media screen and (max-width: $breakpoint-md) {
         justify-content: center;
       }
@@ -178,6 +413,10 @@
         width: 880px;
         height: 450px;
         margin-right: 50px;
+        @media screen and (max-width: $breakpoint-sm) {
+          width: 100px;
+          height: 150px;
+        }
         @media screen and (max-width: $breakpoint-md) {
           width: 500px;
           height: 250px;
@@ -291,7 +530,6 @@
       text-decoration: underline;
     }
   }
-
   .Titre {
     font: 8em var(--font-primary);
   }
@@ -303,9 +541,20 @@
   }
   .mechant {
     font: 8em var(--font-primary);
+    @media screen and (max-width: $breakpoint-sm) {
+      height: 130px;
+      font-size: 10em;
+      width: 600px;
+    }
   }
   .queensman {
     font: 8em var(--font-primary);
+  }
+  @media screen and (max-width: $breakpoint-sm) {
+    .Titre {
+      font: 8em var(--font-primary);
+      height: 130px;
+    }
   }
   .text-copy {
     fill: none;
