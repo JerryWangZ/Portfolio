@@ -7,30 +7,72 @@
   }
   h4 {
     text-align: center;
+    @media screen and (max-width: $breakpoint-lg) {
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+      font-size: 1.2em;
+    }
   }
   .iconsContactGros {
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
     transition: 1s;
+    @media screen and (max-width: $breakpoint-lg) {
+      margin-top: 40px;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+      flex-wrap: wrap;
+      margin-left: 80px;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin-left: 20px;
+    }
     img {
       &:hover {
         opacity: 0.5;
         transition: 0.5s;
       }
+      @media screen and (max-width: $breakpoint-md) {
+        width: 80%;
+        height: 90%;
+        justify-content: center;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        width: 80%;
+        height: 90%;
+        margin-left: 0;
+      }
     }
   }
+
   .informations {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    @media screen and (max-width: $breakpoint-lg) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+      flex-direction: column;
+    }
     h5 {
+      @media screen and (max-width: $breakpoint-sm) {
+        font-size: 1em;
+      }
     }
     img {
       margin-right: 20px;
       margin-left: 150px;
+      @media screen and (max-width: $breakpoint-sm) {
+        margin-left: 20px;
+      }
     }
   }
   ::selection {
@@ -47,6 +89,10 @@
       color: var(--color-secondary);
       &:hover {
         color: var(--color-text-secondary);
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        text-align: center;
+        margin-right: 120px;
       }
     }
   }
