@@ -24,7 +24,7 @@
 
     #UFO {
       border-radius: 20px;
-      width: 880px;
+      width: 580px;
       height: 450px;
       margin-right: 50px;
 
@@ -40,6 +40,14 @@
         margin-bottom: 20px;
         margin-top: 20px;
         margin-left: 50px;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        width: 280px;
+        height: 150px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
       }
     }
     #Boxeur {
@@ -59,6 +67,14 @@
         margin-bottom: 20px;
         margin-top: 20px;
         margin-left: 50px;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        width: 280px;
+        height: 150px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
       }
     }
 
@@ -80,6 +96,14 @@
         margin-top: 20px;
         margin-left: 50px;
       }
+      @media screen and (max-width: $breakpoint-xs) {
+        width: 280px;
+        height: 150px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
     }
     #Queensman {
       width: 900px;
@@ -99,6 +123,14 @@
         margin-top: 20px;
         margin-left: 50px;
       }
+      @media screen and (max-width: $breakpoint-xs) {
+        width: 280px;
+        height: 150px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
     }
     .Titre {
       font: 8em var(--font-primary);
@@ -110,6 +142,12 @@
         font-size: 10em;
         width: 600px;
       }
+      @media screen and (max-width: $breakpoint-xs) {
+        font: 8em var(--font-primary);
+        height: 130px;
+        width: 400px;
+        margin-left: 65px;
+      }
     }
     .mediaConf {
       font: 8em var(--font-primary);
@@ -117,6 +155,12 @@
         height: 130px;
         font-size: 10em;
         width: 600px;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        font: 8em var(--font-primary);
+        height: 130px;
+        width: 400px;
+        margin-left: 57px;
       }
     }
     .mechant {
@@ -129,6 +173,12 @@
         font-size: 10em;
         width: 600px;
       }
+      @media screen and (max-width: $breakpoint-xs) {
+        font: 8em var(--font-primary);
+        height: 130px;
+        width: 450px;
+        margin-left: 33px;
+      }
     }
     @media screen and (max-width: $breakpoint-sm) {
       .Titre {
@@ -136,6 +186,14 @@
         height: 130px;
       }
     }
+    @media screen and (max-width: $breakpoint-xs) {
+      .Titre {
+        font: 8em var(--font-primary);
+        height: 130px;
+        margin-left: 33px;
+      }
+    }
+
     .text-copy {
       fill: none;
       stroke-dasharray: 6% 29%;
@@ -200,6 +258,12 @@
         height: 250px;
         border-radius: 20px;
         margin-right: 50px;
+        @media screen and (max-width: $breakpoint-xs) {
+          width: 280px;
+          height: 150px;
+          margin-bottom: 20px;
+          margin-top: 20px;
+        }
       }
     }
   }
@@ -231,6 +295,12 @@
         margin-left: 0;
         margin-bottom: 0px;
         display: initial;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        padding-right: 90px;
+        h2 {
+          font-size: 25px;
+        }
       }
 
       .iconBlender {
@@ -492,6 +562,9 @@
     @media screen and (max-width: $breakpoint-md) {
       margin-right: 20px;
     }
+    @media screen and (max-width: $breakpoint-xs) {
+      margin-left: 69px;
+    }
   }
 
   .shape1,
@@ -545,6 +618,11 @@
       height: 130px;
       font-size: 10em;
       width: 600px;
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+      font: 8em var(--font-primary);
+      height: 130px;
+      width: 550px;
     }
   }
   .queensman {
