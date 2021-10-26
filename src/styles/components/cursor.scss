@@ -22,3 +22,11 @@ body,
 body a {
   cursor: none;
 }
+@media screen and (max-width: $breakpoint-sm) {
+  .cursor {
+    display: none;
+  }
+  .cursor--small {
+    display: none;
+  }
+}

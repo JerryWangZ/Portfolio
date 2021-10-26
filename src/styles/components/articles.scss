@@ -68,6 +68,13 @@
         margin-top: 20px;
         margin-left: 50px;
       }
+      @media screen and (max-width: $breakpoint-sm) {
+        width: 500px;
+        height: 250px;
+        margin-bottom: 35px;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
       @media screen and (max-width: $breakpoint-xs) {
         width: 280px;
         height: 150px;
@@ -96,6 +103,10 @@
         margin-top: 20px;
         margin-left: 50px;
       }
+      @media screen and (max-width: $breakpoint-s) {
+        margin-bottom: 25px;
+        margin-top: 20px;
+      }
       @media screen and (max-width: $breakpoint-xs) {
         width: 280px;
         height: 150px;
@@ -122,6 +133,10 @@
         margin-bottom: 20px;
         margin-top: 20px;
         margin-left: 50px;
+      }
+      @media screen and (max-width: $breakpoint-s) {
+        margin-bottom: 25px;
+        margin-top: 20px;
       }
       @media screen and (max-width: $breakpoint-xs) {
         width: 280px;
@@ -258,6 +273,10 @@
         height: 250px;
         border-radius: 20px;
         margin-right: 50px;
+        @media screen and (max-width: $breakpoint-s) {
+          margin-bottom: 25px;
+          margin-top: 20px;
+        }
         @media screen and (max-width: $breakpoint-xs) {
           width: 280px;
           height: 150px;
