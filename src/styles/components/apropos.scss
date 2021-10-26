@@ -328,6 +328,20 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      a.VideoPresentation {
+        padding-top: 15px;
+        font-size: 30px;
+        text-decoration-color: var(--color-secondary);
+        @media screen and (max-width: $breakpoint-sm) {
+          font-size: 25px;
+        }
+        @media screen and (max-width: $breakpoint-s) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: $breakpoint-xs) {
+          font-size: 15px;
+        }
+      }
       span {
         color: var(--color-secondary);
       }
