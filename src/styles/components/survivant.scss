@@ -49,7 +49,13 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     @media screen and (max-width: $breakpoint-lg) {
       #UFO {
+        height: 400px;
         width: 800px;
+      }
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+      #UFO {
+        height: 350px;
       }
     }
     @media screen and (max-width: $breakpoint-xs) {
@@ -135,10 +141,14 @@
   }
   h4 {
     margin-bottom: 0;
-    .MarginTop {
-      @media screen and (max-width: $breakpoint-sm) {
-        margin-top: 250px;
-      }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      margin-top: 100px;
+    }
+  }
+  .pasdeMargin {
+    @media screen and (max-width: $breakpoint-sm) {
+      margin-top: 30px;
     }
   }
   p {
@@ -152,29 +162,50 @@
       margin-top: 20px;
     }
   }
+  .github {
+    @media screen and (max-width: $breakpoint-xs) {
+      margin-top: 60px;
+    }
+  }
 
   .swing {
     #storyboard {
       max-height: 550px;
+      border-radius: 20px;
       @media screen and (max-width: $breakpoint-lg) {
         max-height: 500px;
       }
+      @media screen and (max-width: $breakpoint-sm) {
+        max-height: 400px;
+      }
+
       @media screen and (max-width: $breakpoint-s) {
-        max-height: 440px;
+        max-height: 400px;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        max-height: 300px;
       }
     }
     #makehuman {
       max-height: 550px;
+      border-radius: 20px;
       @media screen and (max-width: $breakpoint-lg) {
         max-height: 510px;
       }
+      @media screen and (max-width: $breakpoint-sm) {
+        max-height: 370px;
+      }
       @media screen and (max-width: $breakpoint-s) {
-        max-height: 470px;
+        max-height: 400px;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        max-height: 300px;
       }
     }
     #astronaut {
       max-height: 550px;
       max-width: 1150px;
+      border-radius: 20px;
       @media screen and (max-width: $breakpoint-lg) {
         max-height: 500px;
       }
@@ -186,6 +217,74 @@
       }
       @media screen and (max-width: $breakpoint-xs) {
         max-height: 200px;
+      }
+    }
+    #camera {
+      max-height: 550px;
+      max-width: 1150px;
+      border-radius: 20px;
+      @media screen and (max-width: $breakpoint-lg) {
+        max-height: 500px;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        max-height: 380px;
+      }
+      @media screen and (max-width: $breakpoint-s) {
+        max-height: 320px;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        max-height: 200px;
+      }
+    }
+    #objJeu {
+      max-height: 550px;
+      max-width: 1150px;
+      border-radius: 20px;
+      @media screen and (max-width: $breakpoint-lg) {
+        max-height: 500px;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        max-height: 380px;
+      }
+      @media screen and (max-width: $breakpoint-s) {
+        max-height: 280px;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        max-height: 180px;
+      }
+    }
+    #scriptsJeu {
+      max-height: 550px;
+      max-width: 1150px;
+      border-radius: 20px;
+      @media screen and (max-width: $breakpoint-lg) {
+        max-height: 500px;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        max-height: 380px;
+      }
+      @media screen and (max-width: $breakpoint-s) {
+        max-height: 280px;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        max-height: 210px;
+      }
+    }
+    #horaire {
+      max-height: 550px;
+      max-width: 1150px;
+      border-radius: 20px;
+      @media screen and (max-width: $breakpoint-lg) {
+        max-height: 350px;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        max-height: 250px;
+      }
+      @media screen and (max-width: $breakpoint-s) {
+        max-height: 200px;
+      }
+      @media screen and (max-width: $breakpoint-xs) {
+        max-height: 130px;
       }
     }
   }
@@ -202,18 +301,16 @@
       max-width: 1000px;
     }
     @media screen and (max-width: $breakpoint-sm) {
-      max-height: 500px;
+      max-height: 380px;
       max-width: 700px;
     }
     @media screen and (max-width: $breakpoint-s) {
       max-height: 300px;
       max-width: 500px;
-      margin-bottom: 80px;
     }
     @media screen and (max-width: $breakpoint-xs) {
       max-height: 250px;
       max-width: 350px;
-      margin-bottom: 80px;
     }
   }
   ::selection {
@@ -321,6 +418,17 @@
     z-index: 5;
     border-radius: 50% 50%;
     background: #000;
+    @media screen and (max-width: $breakpoint-xs) {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      top: -14px;
+      left: 52.5%;
+      z-index: 5;
+      border-radius: 50% 50%;
+      background: #000;
+    }
   }
   #horaire:before {
     content: "";
@@ -332,6 +440,9 @@
     z-index: 5;
     border-radius: 50% 50%;
     background: #000;
+    @media screen and (max-width: $breakpoint-xs) {
+      left: 51.9%;
+    }
   }
   #StoryboardDot:before {
     @media screen and (max-width: $breakpoint-xs) {
